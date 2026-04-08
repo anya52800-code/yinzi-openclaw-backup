@@ -248,8 +248,8 @@
 - **脚本位置**: `scripts/`
 - **备份内容**: memory/, MEMORY.md, AGENTS.md, skills索引
 - **执行频率**: 
-  - 每日 21:00 - Git备份
-  - 每周五 21:30 - 周归档
+  - 每日 19:00 - Git备份
+  - 每周五 19:00 - 周归档
 - **归档位置**: `backup/weekly/`, `backup/monthly/`
 
 ### 手动执行
