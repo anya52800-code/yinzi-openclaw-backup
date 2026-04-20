@@ -1,6 +1,6 @@
-# 🔄 每日自动备份记忆系统
-# 执行时间: 每天 21:00
-# 备份内容: 记忆文件 + 技能索引 + 系统配置 + OneDrive 云盘
+# OpenClaw Daily Backup Script
+# Backs up memory files to Git and OneDrive
+# Run time: Daily at 21:00
 
 $date = Get-Date -Format "yyyy-MM-dd"
 $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
@@ -9,84 +9,77 @@ $oneDriveDir = "$env:USERPROFILE\OneDrive\OpenClaw-Backup"
 
 try {
     Set-Location $workspace
-    Write-Host "🔄 开始每日备份: $timestamp" -ForegroundColor Cyan
+    Write-Host "Starting daily backup: $timestamp" -ForegroundColor Cyan
 
-    # 1. 确保目录存在
+    # Create directories
     New-Item -ItemType Directory -Path "$workspace\backup\weekly" -Force | Out-Null
     New-Item -ItemType Directory -Path "$workspace\backup\monthly" -Force | Out-Null
     New-Item -ItemType Directory -Path $oneDriveDir -Force | Out-Null
 
-    # 2. Git提交当前状态
+    # Git init if needed
     if (-not (Test-Path ".git")) {
         git init | Out-Null
-        Write-Host "✅ Git仓库已初始化" -ForegroundColor Green
-        
-        # 配置用户信息（首次）
         git config user.email "openclaw@local" | Out-Null
         git config user.name "OpenClaw Backup" | Out-Null
+        Write-Host "Git repo initialized" -ForegroundColor Green
     }
 
-    # 3. 添加所有关键文件（新增核心配置文件）
+    # Add all key files
     git add memory/ --all 2>$null
     git add MEMORY.md AGENTS.md HEARTBEAT.md TOOLS.md 2>$null
     git add SOUL.md IDENTITY.md USER.md 2>$null
     git add memory/work/ memory/life/ --all 2>$null
     git add scripts/*.ps1 2>$null
-    git add skills/ --all 2>$null
 
-    # 4. 提交（如果有变更）
+    # Commit if changes exist
     $status = git status --porcelain
     if ($status) {
-        git commit -m "📝 记忆备份: $date `n`n- 自动备份每日记忆 `n- 更新技能索引" | Out-Null
-        Write-Host "✅ Git提交完成: $($status.Count) 个文件" -ForegroundColor Green
+        git commit -m "Memory backup: $date" | Out-Null
+        Write-Host "Git commit done: $($status.Count) files" -ForegroundColor Green
     } else {
-        Write-Host "ℹ️ 无变更，跳过提交" -ForegroundColor Yellow
+        Write-Host "No changes, skip commit" -ForegroundColor Yellow
     }
 
-    # 5. 生成备份报告
-    $memorySize = (Get-ChildItem memory/ -Recurse -ErrorAction SilentlyContinue | Measure-Object -Property Length -Sum).Sum
-    $memorySizeMB = [math]::Round($memorySize / 1MB, 2)
+    # Generate report
     $fileCount = (Get-ChildItem memory/ -Filter "*.md" -Recurse -ErrorAction SilentlyContinue).Count
-
+    
     $report = @"
-# 📊 备份报告 - $date
+# Backup Report - $date
 
-## 备份时间
-- 执行时间: $timestamp
-- 备份类型: 每日自动备份
+## Time
+- Executed: $timestamp
+- Type: Daily auto backup
 
-## 备份内容
-- [x] 每日记忆文件
-- [x] 工作分区: memory/work/
-- [x] 生活分区: memory/life/
-- [x] 长期记忆: MEMORY.md
-- [x] 系统配置: AGENTS.md, HEARTBEAT.md, TOOLS.md
-- [x] 身份配置: SOUL.md, IDENTITY.md, USER.md
-- [x] 技能索引: memory/work/skills-*.md
-- [x] 备份脚本: scripts/*.ps1
+## Contents
+- Daily memory files
+- Work zone: memory/work/
+- Life zone: memory/life/
+- Long-term: MEMORY.md
+- Config: AGENTS.md, HEARTBEAT.md, TOOLS.md
+- Identity: SOUL.md, IDENTITY.md, USER.md
+- Scripts: scripts/*.ps1
 
-## Git状态
-$(if ($status) { "- 提交变更: $($status.Count) 个文件" } else { "- 状态: 无变更" })
-- 最新提交: $(git log -1 --pretty=format:"%h - %s" 2>$null)
+## Git Status
+$(if ($status) { "- Changes: $($status.Count) files" } else { "- No changes" })
+- Last commit: $(git log -1 --pretty=format:"%h - %s" 2>$null)
 
-## 存储统计
-- 总大小: $memorySizeMB MB
-- 记忆文件数: $fileCount 个
+## Stats
+- Memory files: $fileCount
 
-## 健康检查
-- [x] 当日记忆文件: $(if (Test-Path "memory/$date.md") { "✅ 存在" } else { "❌ 缺失" })
-- [x] MEMORY.md: $(if (Test-Path "MEMORY.md") { "✅ 存在" } else { "❌ 缺失" })
-- [x] 技能索引: $(if (Test-Path "memory/work/skills-index.md") { "✅ 存在" } else { "❌ 缺失" })
+## Health Check
+- Today memory: $(if (Test-Path "memory/$date.md") { "OK" } else { "MISSING" })
+- MEMORY.md: $(if (Test-Path "MEMORY.md") { "OK" } else { "MISSING" })
+- Skills index: $(if (Test-Path "memory/work/skills-index.md") { "OK" } else { "MISSING" })
 
 ---
-*自动生成的备份报告*
+Auto-generated backup report
 "@
 
     $report | Out-File -FilePath "$workspace\backup\daily-report-$date.md" -Encoding UTF8
-    Write-Host "✅ 备份报告已生成" -ForegroundColor Green
+    Write-Host "Backup report generated" -ForegroundColor Green
 
-    # 6. ☁️ 自动上传到 OneDrive
-    Write-Host "☁️ 开始上传到 OneDrive..." -ForegroundColor Cyan
+    # Upload to OneDrive
+    Write-Host "Uploading to OneDrive..." -ForegroundColor Cyan
     $uploadFiles = @(
         @{ Source = "MEMORY.md"; Target = "MEMORY-$date.md" }
         @{ Source = "AGENTS.md"; Target = "AGENTS-$date.md" }
@@ -100,46 +93,37 @@ $(if ($status) { "- 提交变更: $($status.Count) 个文件" } else { "- 状态
 
     $uploadCount = 0
     foreach ($file in $uploadFiles) {
-        if (Test-Path "$workspace\$($file.Source)") {
-            try {
-                Copy-Item -Path "$workspace\$($file.Source)" -Destination "$oneDriveDir\$($file.Target)" -Force
-                $uploadCount++
-                Write-Host "  ✓ $($file.Target)" -ForegroundColor Gray
-            } catch {
-                Write-Host "  ✗ $($file.Target) - $_" -ForegroundColor Red
-            }
-        } else {
-            Write-Host "  ⚠ $($file.Target) - 源文件不存在" -ForegroundColor Yellow
+        $src = "$workspace\$($file.Source)"
+        $dst = "$oneDriveDir\$($file.Target)"
+        if (Test-Path $src) {
+            Copy-Item -Path $src -Destination $dst -Force
+            $uploadCount++
         }
     }
 
-    # 同时上传最近7天的记忆文件
+    # Upload last 7 daily memory files
     $dailyFiles = Get-ChildItem "$workspace\memory" -Filter "*.md" | 
         Where-Object { $_.Name -match "^\d{4}-\d{2}-\d{2}\.md$" } |
         Sort-Object Name -Descending |
         Select-Object -First 7
 
     foreach ($file in $dailyFiles) {
-        try {
-            Copy-Item -Path $file.FullName -Destination "$oneDriveDir\$($file.Name)" -Force
-            $uploadCount++
-        } catch {
-            Write-Host "  ✗ memory/$($file.Name) - $_" -ForegroundColor Red
-        }
+        Copy-Item -Path $file.FullName -Destination "$oneDriveDir\$($file.Name)" -Force
+        $uploadCount++
     }
 
-    Write-Host "✅ OneDrive上传完成: $uploadCount 个文件" -ForegroundColor Green
+    Write-Host "OneDrive upload done: $uploadCount files" -ForegroundColor Green
 
-    # 7. 推送到远程（如果配置了）
+    # Push to remote if configured
     $remote = git remote get-url origin 2>$null
     if ($remote) {
         git push origin main 2>$null | Out-Null
-        Write-Host "✅ 已推送到远程仓库" -ForegroundColor Green
+        Write-Host "Pushed to remote" -ForegroundColor Green
     }
 
-    Write-Host "🎉 每日备份完成! (Git + OneDrive)" -ForegroundColor Green
+    Write-Host "Daily backup complete! (Git + OneDrive)" -ForegroundColor Green
     
 } catch {
-    Write-Host "❌ 备份失败: $_" -ForegroundColor Red
+    Write-Host "Backup failed: $_" -ForegroundColor Red
     exit 1
 }
