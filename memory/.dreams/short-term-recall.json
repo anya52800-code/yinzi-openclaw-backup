@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-20T06:38:10.380Z",
+  "updatedAt": "2026-04-20T06:55:23.659Z",
   "entries": {
     "memory:memory/2026-04-01.md:74:106": {
       "key": "memory:memory/2026-04-01.md:74:106",
@@ -301,19 +301,20 @@
       "endLine": 62,
       "source": "memory",
       "snippet": "- **未找到** \"魔神36-碰撞图\" 模型（公开/个人/共享均搜索无果） ### screenshots 文件夹 - 用户创建 workspace/screenshots/ 用于图片交换 - 成功读取 gui_img_map149.png： - 类型：游戏地图/区域地块素材 - 风格：极简扁平化 + 手绘不规则边缘 - 主色调：灰褐色/大地色 (#999080) - 背景：透明 PNG - 用途：大战略/4X 游戏省份地块 ### Pinterest 搜索 - 登录用户 Pinterest 账号 (anya52800) - 搜索 \"Diablo logo\" 找到 10+ 参考图 - 截图保存至 screenshots/pinterest_diablo_logo.jpg ### 飞书图片传输问题 - 飞书直接发图无法接收（可能是格式/权限限制） - **解决方案**：用户将图片放入 screenshots 文件夹，我直接读取 ### 技术限制记录 - 无法直接操作用户本地软件（Photoshop/DreamMaker 客户端） - 网易内部系统（DreamMaker/MUSE）需员工账号登录，我无法绕过 SSO - 浏览器控制仅对 Web 版有效",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.043110922871379,
+      "totalScore": 5.043110922871379,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-09T03:11:02.585Z",
-      "lastRecalledAt": "2026-04-20T04:19:45.250Z",
+      "lastRecalledAt": "2026-04-20T06:55:23.659Z",
       "queryHashes": [
         "88abaa94bbd0",
         "06698e17c9cf",
         "6bc396786eb6",
         "605a31d58760",
-        "294db2bcd5cf"
+        "294db2bcd5cf",
+        "05cd2e1c13b0"
       ],
       "recallDays": [
         "2026-04-09",
@@ -487,6 +488,68 @@
         "艺术/成长/小说/传记",
         "book.jd.com",
         "艺术/传记/小说/励志"
+      ]
+    },
+    "memory:memory/2026-04-09.md:1:17": {
+      "key": "memory:memory/2026-04-09.md:1:17",
+      "path": "memory/2026-04-09.md",
+      "startLine": 1,
+      "endLine": 17,
+      "source": "memory",
+      "snippet": "### 19:23 - 创建 DreamMaker 自动化技能 - **技能名称**：dreammaker-automation - **位置**：`~/.openclaw/workspace/skills/dreammaker-automation/` - **包含文件**： - `SKILL.md` - 完整操作指南（参数设置、提示词模板、常见问题） - `scripts/dreammaker_helper.py` - 辅助脚本（提示词生成器、预设配置） - **功能**：自动打开DreamMaker、设置参数、上传参考图、填入提示词、触发生成 - **支持模型**：nano-banana-pro / 即梦图片4.5 - **支持分辨率**：1K/2K/4K - **支持比例**：1:1 / 4:3 / 16:9 / 21:9 - **创建时间**：2026-04-09 19:23 --- _自动追加于 19:24_",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-20T06:55:23.659Z",
+      "lastRecalledAt": "2026-04-20T06:55:23.659Z",
+      "queryHashes": [
+        "05cd2e1c13b0"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "dreammaker-automation",
+        "skill.md",
+        "scripts/dreammaker-helper.py",
+        "nano-banana-pro",
+        "即梦图片4.5",
+        "1k/2k/4k",
+        "创建",
+        "dreammaker"
+      ]
+    },
+    "memory:memory/2026-04-10.md:1:13": {
+      "key": "memory:memory/2026-04-10.md:1:13",
+      "path": "memory/2026-04-10.md",
+      "startLine": 1,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "# 2026-04-10 记忆 ## 上午 ### 11:01 - 唤醒 - 检查记忆系统状态 - 创建当日记忆文件 ### 13:58 - 每日记忆系统维护 - 检查当日记忆文件状态：已存在 - 回顾昨日待办：DreamMaker 自动化技能创建完成 ✓ - 系统状态：正常",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-20T06:55:23.659Z",
+      "lastRecalledAt": "2026-04-20T06:55:23.659Z",
+      "queryHashes": [
+        "05cd2e1c13b0"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "记忆",
+        "上午",
+        "唤醒",
+        "检查",
+        "系统",
+        "状态",
+        "创建",
+        "当日"
       ]
     }
   }
