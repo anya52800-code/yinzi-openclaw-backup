@@ -1,140 +1,113 @@
-# ☁️ 飞书云空间上传脚本
-# 将本地备份同步到飞书云空间
-# 使用: .\scripts\upload-to-feishu.ps1
+# 飞书云空间每日快照上传
+# 每天19:05自动执行
 
 $date = Get-Date -Format "yyyy-MM-dd"
 $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
 $workspace = "$env:USERPROFILE\.openclaw\workspace"
 
-Write-Host @"
-╔══════════════════════════════════════════════════════════╗
-║        ☁️ 飞书云空间 - 记忆系统同步                      ║
-╚══════════════════════════════════════════════════════════╝
-"@ -ForegroundColor Cyan
-
-Write-Host "同步时间: $timestamp" -ForegroundColor Gray
+Write-Host "============================================"
+Write-Host "  飞书云空间每日快照 - $date"
+Write-Host "============================================"
+Write-Host "时间: $timestamp"
 Write-Host ""
 
-# 检查必要文件
-$requiredFiles = @(
+# 创建快照目录
+$snapshotDir = "$workspace\backup\snapshot-$date"
+New-Item -ItemType Directory -Path $snapshotDir -Force | Out-Null
+
+Write-Host "步骤1: 复制文件到快照目录..."
+
+# 复制核心文件
+$coreFiles = @(
     "$workspace\MEMORY.md",
     "$workspace\AGENTS.md",
     "$workspace\HEARTBEAT.md",
-    "$workspace\memory\work\skills-index.md",
-    "$workspace\memory\work\skills-priority.md"
+    "$workspace\IDENTITY.md",
+    "$workspace\SOUL.md",
+    "$workspace\TOOLS.md",
+    "$workspace\USER.md"
 )
 
-Write-Host "📋 检查待上传文件..." -ForegroundColor Yellow
-$missingFiles = @()
-foreach ($file in $requiredFiles) {
+foreach ($file in $coreFiles) {
     if (Test-Path $file) {
+        $name = Split-Path $file -Leaf
+        Copy-Item $file "$snapshotDir\$name" -Force
         $size = [math]::Round((Get-Item $file).Length / 1KB, 2)
-        Write-Host "  ✅ $(Split-Path $file -Leaf) ($size KB)" -ForegroundColor Green
-    } else {
-        Write-Host "  ❌ $(Split-Path $file -Leaf) - 缺失" -ForegroundColor Red
-        $missingFiles += $file
+        Write-Host "  + $name ($size KB)"
     }
 }
 
-if ($missingFiles.Count -gt 0) {
-    Write-Host ""
-    Write-Host "⚠️ 有 $($missingFiles.Count) 个文件缺失，请检查后再试" -ForegroundColor Red
-    exit 1
+# 创建子目录
+New-Item -ItemType Directory -Path "$snapshotDir\memory" -Force | Out-Null
+New-Item -ItemType Directory -Path "$snapshotDir\memory\work" -Force | Out-Null
+New-Item -ItemType Directory -Path "$snapshotDir\memory\life" -Force | Out-Null
+New-Item -ItemType Directory -Path "$snapshotDir\skills" -Force | Out-Null
+
+# 复制技能索引
+if (Test-Path "$workspace\memory\work\skills-index.md") {
+    Copy-Item "$workspace\memory\work\skills-index.md" "$snapshotDir\skills\" -Force
+    Write-Host "  + skills/skills-index.md"
+}
+if (Test-Path "$workspace\memory\work\skills-priority.md") {
+    Copy-Item "$workspace\memory\work\skills-priority.md" "$snapshotDir\skills\" -Force
+    Write-Host "  + skills/skills-priority.md"
 }
 
+# 复制当日记忆
+$todayMem = "$workspace\memory\$date.md"
+if (Test-Path $todayMem) {
+    Copy-Item $todayMem "$snapshotDir\memory\" -Force
+    Write-Host "  + memory/$date.md"
+}
+
+# 复制记忆分区
+Copy-Item "$workspace\memory\work\*" "$snapshotDir\memory\work\" -Recurse -Force -ErrorAction SilentlyContinue
+Copy-Item "$workspace\memory\life\*" "$snapshotDir\memory\life\" -Recurse -Force -ErrorAction SilentlyContinue
+Write-Host "  + memory/work/*"
+Write-Host "  + memory/life/*"
+
+# 生成清单
+$gitInfo = git log -1 --pretty=format:"%h - %s" 2>$null
+if ($gitInfo -eq $null) { $gitInfo = "N/A" }
+
+$manifest = "每日快照清单 - $date`n生成时间: $timestamp`nGit提交: $gitInfo`n`n包含文件:`n"
+foreach ($f in $coreFiles) {
+    if (Test-Path $f) { $manifest += "- $(Split-Path $f -Leaf)`n" }
+}
+$manifest += "- memory/$date.md`n- memory/work/*`n- memory/life/*`n- skills/*"
+$manifest | Out-File -FilePath "$snapshotDir\manifest.md" -Encoding UTF8
+
+# 压缩
+$zipPath = "$workspace\backup\snapshot-$date.zip"
+Compress-Archive -Path "$snapshotDir\*" -DestinationPath $zipPath -Force
+$zipSize = [math]::Round((Get-Item $zipPath).Length / 1KB, 2)
+
 Write-Host ""
-Write-Host "📤 准备上传到飞书云空间..." -ForegroundColor Yellow
+Write-Host "步骤2: 压缩快照..."
+Write-Host "  文件: snapshot-$date.zip ($zipSize KB)"
+
+# 生成上传清单
+$list = "飞书上传清单 - $date`n================================`n"
+$list += "`n目录: OpenClaw-Backup/2-daily-snapshot/$date/`n`n"
+$list += "步骤:`n"
+$list += "1. 创建文件夹: 2-daily-snapshot/$date/`n"
+$list += "2. 解压 snapshot-$date.zip 到该文件夹`n"
+$list += "3. 同时更新 1-latest/ 下的文件`n`n"
+$list += "本地文件:`n"
+$list += "- $zipPath`n"
+$list += "- $snapshotDir\`n"
+
+$listFile = "$workspace\backup\upload-list-$date.txt"
+$list | Out-File -FilePath $listFile -Encoding UTF8
+
 Write-Host ""
-
-# 生成上传批次文件（供手动或API使用）
-$uploadBatch = @"
-# 飞书云空间上传批次 - $date
-# 生成时间: $timestamp
-# 
-# 使用方法:
-# 1. 打开飞书云空间: https://www.feishu.cn/drive/
-# 2. 创建文件夹: OpenClaw-Backup
-# 3. 按以下结构上传文件
-
-## 📁 目标路径: OpenClaw-Backup/1-memory-current/
-
-$(foreach ($file in $requiredFiles) {
-    $name = Split-Path $file -Leaf
-    $targetName = if ($name -match "^\d{4}-\d{2}-\d{2}\.md$") { $name } else { "$name" }
-    "UPLOAD: $file -> 1-memory-current/$targetName"
-})
-
-## 📁 目标路径: OpenClaw-Backup/2-archive-weekly/
-$(if (Test-Path "$workspace\backup\weekly") {
-    Get-ChildItem "$workspace\backup\weekly" -Filter "*.zip" |
-    Sort-Object LastWriteTime -Descending |
-    Select-Object -First 3 |
-    ForEach-Object { "UPLOAD: $($_.FullName) -> 2-archive-weekly/$($_.Name)" }
-} else { "# 暂无归档文件" })
-
-## 📁 目标路径: OpenClaw-Backup/4-reports/
-$(if (Test-Path "$workspace\backup") {
-    Get-ChildItem "$workspace\backup" -Filter "daily-report-*.md" |
-    Sort-Object LastWriteTime -Descending |
-    Select-Object -First 7 |
-    ForEach-Object { "UPLOAD: $($_.FullName) -> 4-reports/$($_.Name)" }
-} else { "# 暂无报告" })
-
-## 📄 README
-UPLOAD: $workspace\backup\cloud-readme.md -> README.md
-
----
-*此文件由 upload-to-feishu.ps1 自动生成*
-"@
-
-$batchFile = "$workspace\backup\feishu-upload-batch-$date.txt"
-$uploadBatch | Out-File -FilePath $batchFile -Encoding UTF8
-
-Write-Host "✅ 上传批次文件已生成: $batchFile" -ForegroundColor Green
+Write-Host "============================================"
+Write-Host "  完成!"
+Write-Host "============================================"
 Write-Host ""
-
-# 尝试使用OpenClaw工具自动上传（需要cloud技能）
-Write-Host "🔍 检查自动上传能力..." -ForegroundColor Yellow
-
-# 创建上传清单摘要
-$summary = @"
-# 飞书云空间同步摘要 - $date
-
-## 待上传文件 ($($requiredFiles.Count) 个核心文件)
-$(foreach ($file in $requiredFiles) {
-    $name = Split-Path $file -Leaf
-    $size = [math]::Round((Get-Item $file).Length / 1KB, 2)
-    "- [ ] $name ($size KB)"
-})
-
-## 步骤
-1. 打开飞书云空间
-2. 创建文件夹: OpenClaw-Backup
-3. 按批次文件上传
-
-## 批次文件位置
-$batchFile
-
----
-生成时间: $timestamp
-"@
-
-$summary | Out-File -FilePath "$workspace\backup\feishu-sync-summary-$date.md" -Encoding UTF8
-
-Write-Host @"
-╔══════════════════════════════════════════════════════════╗
-║              ✅ 同步准备完成!                            ║
-╚══════════════════════════════════════════════════════════╝
-
-📄 批次文件: backup\feishu-upload-batch-$date.txt
-📊 摘要文件: backup\feishu-sync-summary-$date.md
-
-💡 手动上传步骤:
-   1. 打开飞书云空间
-   2. 新建文件夹: OpenClaw-Backup
-   3. 按批次文件清单上传
-
-⚡ 或使用命令行:
-   openclaw feishu drive upload --folder "OpenClaw-Backup"
-
-"@ -ForegroundColor Green
+Write-Host "生成文件:"
+Write-Host "  - snapshot-$date.zip ($zipSize KB)"
+Write-Host "  - upload-list-$date.txt"
+Write-Host ""
+Write-Host "下一步: 手动上传到飞书云空间"
+Write-Host "  路径: 2-daily-snapshot/$date/"

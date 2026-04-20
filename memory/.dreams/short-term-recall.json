@@ -1,0 +1,493 @@
+{
+  "version": 1,
+  "updatedAt": "2026-04-20T06:38:10.380Z",
+  "entries": {
+    "memory:memory/2026-04-01.md:74:106": {
+      "key": "memory:memory/2026-04-01.md:74:106",
+      "path": "memory/2026-04-01.md",
+      "startLine": 74,
+      "endLine": 106,
+      "source": "memory",
+      "snippet": "- 艺术类、传记类、小说类分榜 - **特点**: 与京东互补，文学类书籍较全 ### 5. 理想国/看理想（品质内容） - **地址**: https://www.lixiang.com - **特点**: 人文艺术类书籍品质高，有深度书评 ### 6. 豆瓣用户书单（UGC内容） - 艺术入门必读书单 - 个人成长经典书单 - 2025年度高分小说 - 人物传记TOP50 ### 7. 线下数据源 - 诚品书店畅销榜（台湾/香港） - 方所书店推荐 - 万圣书园排行榜（北京） --- ### 抓取策略 1. **每周一**: 更新豆瓣热门榜、微信读书飙升榜 2. **每月1日**: 整理各平台月度畅销数据 3. **每年12月**: 重点抓取年度榜单 4. **实时**: 新书发布时（艺术/传记类重点作者） ### 定时提醒 - **每日 10:50**: 准备新闻推送 - **每日 11:00**: 正式推送 --- _偏好设置时间: 2026-04-01 18:06_",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.8136313851661874,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-08T11:55:27.128Z",
+      "lastRecalledAt": "2026-04-20T04:19:45.250Z",
+      "queryHashes": [
+        "49c26bfa1e51",
+        "294db2bcd5cf"
+      ],
+      "recallDays": [
+        "2026-04-08",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "理想国/看理想",
+        "www.lixiang.com",
+        "台湾/香港",
+        "艺术/传记类重点作者",
+        "艺术",
+        "传记",
+        "小说",
+        "特点"
+      ]
+    },
+    "memory:memory/2026-04-07.md:1:47": {
+      "key": "memory:memory/2026-04-07.md:1:47",
+      "path": "memory/2026-04-07.md",
+      "startLine": 1,
+      "endLine": 47,
+      "source": "memory",
+      "snippet": "# 2026-04-07 记忆 ## 今日概览 - **日期**: 2026年4月7日 星期二 - **状态**: ✅ 备份系统配置完成 ## 待办事项 - [x] 飞书云空间最终授权确认 - ✅ 完成 - [x] 核心文件上传 - ✅ 完成 - [x] 方案A时间戳版本化脚本更新 - ✅ 完成 - [ ] 完整上传演示 - 🔄 进行中 ## 进行中 - 三层备份架构部署 ## 已完成 - [x] 技能计数核查修正（46→51个） - [x] 24个5星技能索引更新 - [x] 记忆备份系统脚本创建 - `scripts/backup-daily.ps1` - Git每日备份 - `scripts/archive-weekly.ps1` - 周归档 - `scripts/backup-full.ps1` - 一键完整备份 - `scripts/sync-feishu.ps1` - 飞书同步准备 - `scripts/upload-to-feishu.ps1` - 手动上传辅助 - `scripts/setup-backup.bat` - 自动安装 - [x] 备份报告模板创建 - [x] 本地定时任务配置准备 - [x] 核心文件上传至飞书云空间 ## 笔记/想法 ### 备份架构设计 **三层备份体系**: 1. **Git版本控制** - 主备份，可追溯历史 2. **本地归档** - 按周/月压缩旧记忆 3. **飞书云空间** - 云端备份，跨设备访问 **执行频率**: - 每日21:00: Git提交 - 每周五21:30: 归",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.738044497815236,
+      "maxScore": 0.738044497815236,
+      "firstRecalledAt": "2026-04-08T11:55:27.128Z",
+      "lastRecalledAt": "2026-04-08T11:55:27.128Z",
+      "queryHashes": [
+        "49c26bfa1e51"
+      ],
+      "recallDays": [
+        "2026-04-08"
+      ],
+      "conceptTags": [
+        "backup",
+        "备份",
+        "scripts/backup-daily.ps1",
+        "scripts/archive-weekly.ps1",
+        "scripts/backup-full.ps1",
+        "scripts/sync-feishu.ps1",
+        "scripts/upload-to-feishu.ps1",
+        "scripts/setup-backup.bat"
+      ]
+    },
+    "memory:memory/2026-04-01.md:1:47": {
+      "key": "memory:memory/2026-04-01.md:1:47",
+      "path": "memory/2026-04-01.md",
+      "startLine": 1,
+      "endLine": 47,
+      "source": "memory",
+      "snippet": "--- ## 新闻推送偏好设置（2026-04-01 更新） ### 推送时间 - **每日上午**: 11:00 ### 内容板块 | 板块 | 状态 | 说明 | |------|:----:|------| | 科技 | ✅ 保留 | AI、硬件、行业动态 | | 经济形势 | ✅ 新增 | 取代原娱乐板块，含市场、政策、产业动态 | | 游戏 | ✅ 保留 | 游戏发布、设备、行业 | | 图书推荐 | ✅ 调整 | 中文书籍为主，类别：艺术、个人成长、小说、人物传记 | | 娱乐 | ❌ 移除 | 替换为经济形势 | | 健康 | ❌ 移除 | 视情况偶尔补充 | ### 内容风格 - **形式**: 简讯（一句话摘要） - **深度**: 浅度，提供链接供深入了解 - **排版**: 图文并茂，每个板块配1张配图 - **语言**: 中文为主，外文媒体内容中文概括 ### 图书推荐类别 1. 🎨 艺术 2. 🌱 个人成长 3. 📖 小说 4. 👤 人物传记 ### 信息源偏好 - 科技: The Verge、TechCrunch、36氪 - 经济: Bloomberg、Financial Times、财新 - 游戏: Variety、游戏葡萄 - 图书: 豆瓣年度榜单、Goodreads、京东/当当畅销榜 --- ## 中文图书来源详细清单 ### 1. 豆瓣读书（主要来源） - **地址**: https://book.douban.com - **推荐榜单**: - 豆瓣年度读书榜单（每年12月发布） - 一周热门图书榜",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.713514070228984,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-08T11:55:27.128Z",
+      "lastRecalledAt": "2026-04-20T04:19:45.250Z",
+      "queryHashes": [
+        "49c26bfa1e51",
+        "294db2bcd5cf"
+      ],
+      "recallDays": [
+        "2026-04-08",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "京东/当当畅销榜",
+        "book.douban.com",
+        "新闻",
+        "推送",
+        "偏好",
+        "设置",
+        "更新",
+        "时间"
+      ]
+    },
+    "memory:memory/2026-03-18.md:1:38": {
+      "key": "memory:memory/2026-03-18.md:1:38",
+      "path": "memory/2026-03-18.md",
+      "startLine": 1,
+      "endLine": 38,
+      "source": "memory",
+      "snippet": "# 2026-03-18 - 记忆系统搭建 ## 今日事件 ### 记忆系统初始化 - **时间**: 10:30 GMT+8 - **事件**: 印子姐要求搭建记忆文件系统 - **动作**: - 检查 MEMORY.md（长期记忆文件）- 存在但内容为空 - 创建每日记忆文件结构 - 建立记忆系统工作流程 ### 身份更新 - **时间**: 14:05 GMT+8 - **事件**: 印子姐赐新名字 - **旧名字**: 磊子（Lei） - **新名字**: 印子的全能设计师 - **原因**: 流程图任务圆满完成，体现出全能设计能力 - **状态**: ✅ 已更新 IDENTITY.md 和 MEMORY.md - **时间**: 11:08 GMT+8 - **事件**: 印子姐纠正文件输出位置 - **规则**: 所有生成的文件必须放入 `screenshots/` 文件夹 - **执行**: - 创建 screenshots 目录 - 移动流程图 PNG 到 screenshots/ - 移动临时 HTML/Python 文件到 screenshots/ - **状态**: ✅ 已更新 MEMORY.md 长期保存此规则 ### 技能安装 - **时间**: 10:51 GMT+8 - **事件**: 安装 mermaid-diagrams 技能 - **来源**: softaworks/agent-toolkit - **安全审查**: ✅ 通过（Gen Safe, Socket 0 alerts, Snyk Low Risk",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7652738183876838,
+      "maxScore": 0.7652738183876838,
+      "firstRecalledAt": "2026-04-08T12:02:40.900Z",
+      "lastRecalledAt": "2026-04-08T12:02:40.900Z",
+      "queryHashes": [
+        "23538990a453"
+      ],
+      "recallDays": [
+        "2026-04-08"
+      ],
+      "conceptTags": [
+        "memory.md",
+        "identity.md",
+        "html/python",
+        "mermaid-diagrams",
+        "softaworks/agent-toolkit",
+        "记忆",
+        "系统",
+        "搭建"
+      ]
+    },
+    "memory:memory/2026-03-16.md:1:44": {
+      "key": "memory:memory/2026-03-16.md:1:44",
+      "path": "memory/2026-03-16.md",
+      "startLine": 1,
+      "endLine": 44,
+      "source": "memory",
+      "snippet": "# 2026-03-16 - 周一 ## 今日事项 - [x] 配置每日新闻推送 cron 任务（10:30 AM） - [x] 创建 memory 目录用于日常记录 - [x] 修复周六未收到新闻推送的问题 ## 配置详情 - cron 任务: news-daily-1030 - 执行时间: 每天 10:30 AM - 推送渠道: 飞书 - 内容: 科技/游戏/美术/笑话 ## 问题根因 - cron 任务配置未完成，yaml 文件只是说明，未写入 jobs.json - memory 目录缺失 ## 解决方式 1. 创建 memory/ 目录 2. 将任务写入 ~/.openclaw/cron/jobs.json 3. 任务已启用 (enabled: true) ## 待验证 - 明天 10:30 检查是否正常推送 --- ## 下午会话记录 (14:00-15:00) ### 新增 Skills 检查 - 今日新增 10 个 skills，包括：agent-browser-clawdbot、article-writer、canvas-design-2、file-organizer-zh、self-improving-agent-3.0.4 等 ### DreamMaker 操作测试 - 成功登录 DreamMaker 2D 创作页面 - 修改分辨率：2K → 4K (4096×4096) - 修改比例：16:9 → 1:1 (正方形) - 触发重新生成任务（使用现有提示词） - **未找到** \"魔神36-碰撞图\" 模型（公开/个人/共享均搜索无果）",
+      "recallCount": 6,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 4.627533157009799,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-08T12:02:40.900Z",
+      "lastRecalledAt": "2026-04-16T02:24:05.534Z",
+      "queryHashes": [
+        "23538990a453",
+        "88abaa94bbd0",
+        "06698e17c9cf",
+        "6bc396786eb6",
+        "605a31d58760",
+        "67d91bf61014"
+      ],
+      "recallDays": [
+        "2026-04-08",
+        "2026-04-09",
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "news-daily-1030",
+        "科技/游戏/美术/笑话",
+        "jobs.json",
+        "openclaw/cron/jobs.json",
+        "00-15",
+        "agent-browser-clawdbot",
+        "article-writer",
+        "canvas-design-2"
+      ]
+    },
+    "memory:memory/2026-03-19.md:1:17": {
+      "key": "memory:memory/2026-03-19.md:1:17",
+      "path": "memory/2026-03-19.md",
+      "startLine": 1,
+      "endLine": 17,
+      "source": "memory",
+      "snippet": "# 2026-03-19 - 日常记录 ## 今日事件 ### 记忆检查 - **时间**: 11:13 GMT+8 - **事件**: 印子姐指出记忆系统有遗漏 - **问题发现**: 1. BOOTSTRAP.md 未按规范删除（初始化完成后应删除） 2. 2026-03-19.md 每日记忆文件未创建 - **修复动作**: 1. ✅ 删除 BOOTSTRAP.md 2. ✅ 创建本日记忆文件 --- _持续记录中_",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7297397418359048,
+      "maxScore": 0.7297397418359048,
+      "firstRecalledAt": "2026-04-08T12:02:40.900Z",
+      "lastRecalledAt": "2026-04-08T12:02:40.900Z",
+      "queryHashes": [
+        "23538990a453"
+      ],
+      "recallDays": [
+        "2026-04-08"
+      ],
+      "conceptTags": [
+        "bootstrap.md",
+        "日常",
+        "记录",
+        "今日",
+        "事件",
+        "记忆",
+        "检查",
+        "时间"
+      ]
+    },
+    "memory:memory/2026-03-26.md:38:80": {
+      "key": "memory:memory/2026-03-26.md:38:80",
+      "path": "memory/2026-03-26.md",
+      "startLine": 38,
+      "endLine": 80,
+      "source": "memory",
+      "snippet": "### 3. 星级优先级体系建立 ✅ **决策**: 五星制优先级调用 - **21个5星技能**：核心技能，自动优先调用 - **17个4星技能**：重要技能，场景匹配推荐 - **8个3星及以下**：辅助技能，按需使用 ### 4. 代码质量门禁 ✅ **决策**: 90分通过线 - 建立 code-validator 技能 - 语法检查 + 常见Bug检测 + 安全扫描 - 集成到AGENTS.md工作流 - **交付标准**: ≥90分才交付 --- ## 具体事件记录 ### 上午-下午 - [x] 涨薪回复建议归档（career.md） - [x] 技能冗余删除（tavily-search等5个） - [x] 9个补短技能安装 - [x] 技能索引更新（43→46个） - [x] 星级优先级文件创建 ### 下午-晚上 - [x] 创作前期分析技能补充（3个） - [x] 代码验证技能创建 - [x] 质量门禁90分设定 - [x] AGENTS.md工作流更新 - [x] 记忆分区自检 --- ## 关键洞察 ### 技能体系设计原则 1. **短板补齐**: 优先补充高频刚需（图片编辑、数据库、SSH） 2. **创作闭环**: 建立\"趋势→竞品→调研→策略→执行\"工作流 3. **质量优先**: 代码生成必须自检，90分门禁 4. **星级调用**: 5星技能自动优先，保障效率与质量 ### 边界确认 - ✅ 能直接做：生成代码/设计、写脚本、分析数据",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7280402935273942,
+      "maxScore": 0.7280402935273942,
+      "firstRecalledAt": "2026-04-08T12:02:40.900Z",
+      "lastRecalledAt": "2026-04-08T12:02:40.900Z",
+      "queryHashes": [
+        "23538990a453"
+      ],
+      "recallDays": [
+        "2026-04-08"
+      ],
+      "conceptTags": [
+        "code-validator",
+        "集成到agents.md工作流",
+        "上午-下午",
+        "career.md",
+        "tavily-search等5个",
+        "下午-晚上",
+        "agents.md工作流更新",
+        "生成代码/设计"
+      ]
+    },
+    "memory:memory/2026-03-26.md:75:118": {
+      "key": "memory:memory/2026-03-26.md:75:118",
+      "path": "memory/2026-03-26.md",
+      "startLine": 75,
+      "endLine": 118,
+      "source": "memory",
+      "snippet": "2. **创作闭环**: 建立\"趋势→竞品→调研→策略→执行\"工作流 3. **质量优先**: 代码生成必须自检，90分门禁 4. **星级调用**: 5星技能自动优先，保障效率与质量 ### 边界确认 - ✅ 能直接做：生成代码/设计、写脚本、分析数据 - ❌ 不能直接做：控制用户电脑软件、自动浏览器操作 - 🟡 半自动：生成脚本→用户运行→反馈结果 --- ## 待办/后续 - [ ] 明日检查：新技能实际使用效果 - [ ] 本周：测试代码验证流程 - [ ] 持续：技能星级动态调整 --- ## 引用文件 - `memory/work/skills-index.md` - 46技能完整索引 - `memory/work/skills-priority.md` - 星级优先级 - `skills/code-validator/SKILL.md` - 代码验证 - `AGENTS.md` - 代码生成工作流 --- ## 晚间补充记录 ### 记忆管理技能建立 ✅ **时间**: 19:27 **内容**: - 创建 `skills/memory-manager/SKILL.md` - 建立记忆系统自动化维护协议 - 设定每日/每周/每月维护清单 - 质量门禁：文件完整性检查 ### 记忆系统自检完成 ✅ **检查项**: - [x] 每日记忆文件已创建（2026-03-26.md） - [x] 长期记忆已更新（MEMORY.md技能里程碑） - [x] 技能索引已同步（46个技能） - [x] 星级优先级已记录（21个5星） - [x] 代码质量门",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.7210935704384394,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-08T12:02:40.900Z",
+      "lastRecalledAt": "2026-04-16T02:24:05.534Z",
+      "queryHashes": [
+        "23538990a453",
+        "67d91bf61014"
+      ],
+      "recallDays": [
+        "2026-04-08",
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "生成代码/设计",
+        "待办/后续",
+        "memory/work/skills-index.md",
+        "memory/work/skills-priority.md",
+        "skills/code-validator/skill.md",
+        "agents.md",
+        "skills/memory-manager/skill.md",
+        "设定每日/每周/每月维护清单"
+      ]
+    },
+    "memory:memory/2026-03-25.md:1:19": {
+      "key": "memory:memory/2026-03-25.md:1:19",
+      "path": "memory/2026-03-25.md",
+      "startLine": 1,
+      "endLine": 19,
+      "source": "memory",
+      "snippet": "# 2026-03-25 - 每日记忆 ## 今日概览 - **日期**: 2026-03-25 - **星期**: Wednesday - **备注**: ## 任务记录 - [ ] ## 重要事件 ## 学习/洞察 ## 待跟进 --- _自动创建 by memory-manager skill_",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8147112809231285,
+      "maxScore": 0.8147112809231285,
+      "firstRecalledAt": "2026-04-09T03:11:02.585Z",
+      "lastRecalledAt": "2026-04-09T03:11:02.585Z",
+      "queryHashes": [
+        "88abaa94bbd0"
+      ],
+      "recallDays": [
+        "2026-04-09"
+      ],
+      "conceptTags": [
+        "学习/洞察",
+        "memory-manager",
+        "每日",
+        "记忆",
+        "今日",
+        "日期",
+        "星期",
+        "wednesday"
+      ]
+    },
+    "memory:memory/2026-03-16.md:38:62": {
+      "key": "memory:memory/2026-03-16.md:38:62",
+      "path": "memory/2026-03-16.md",
+      "startLine": 38,
+      "endLine": 62,
+      "source": "memory",
+      "snippet": "- **未找到** \"魔神36-碰撞图\" 模型（公开/个人/共享均搜索无果） ### screenshots 文件夹 - 用户创建 workspace/screenshots/ 用于图片交换 - 成功读取 gui_img_map149.png： - 类型：游戏地图/区域地块素材 - 风格：极简扁平化 + 手绘不规则边缘 - 主色调：灰褐色/大地色 (#999080) - 背景：透明 PNG - 用途：大战略/4X 游戏省份地块 ### Pinterest 搜索 - 登录用户 Pinterest 账号 (anya52800) - 搜索 \"Diablo logo\" 找到 10+ 参考图 - 截图保存至 screenshots/pinterest_diablo_logo.jpg ### 飞书图片传输问题 - 飞书直接发图无法接收（可能是格式/权限限制） - **解决方案**：用户将图片放入 screenshots 文件夹，我直接读取 ### 技术限制记录 - 无法直接操作用户本地软件（Photoshop/DreamMaker 客户端） - 网易内部系统（DreamMaker/MUSE）需员工账号登录，我无法绕过 SSO - 浏览器控制仅对 Web 版有效",
+      "recallCount": 5,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 4.043110922871379,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-09T03:11:02.585Z",
+      "lastRecalledAt": "2026-04-20T04:19:45.250Z",
+      "queryHashes": [
+        "88abaa94bbd0",
+        "06698e17c9cf",
+        "6bc396786eb6",
+        "605a31d58760",
+        "294db2bcd5cf"
+      ],
+      "recallDays": [
+        "2026-04-09",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "魔神36-碰撞图",
+        "公开/个人/共享均搜索无果",
+        "workspace/screenshots",
+        "gui-img-map149.png",
+        "游戏地图/区域地块素材",
+        "灰褐色/大地色",
+        "大战略/4x",
+        "可能是格式/权限限制"
+      ]
+    },
+    "memory:memory/2026-04-07.md:102:151": {
+      "key": "memory:memory/2026-04-07.md:102:151",
+      "path": "memory/2026-04-07.md",
+      "startLine": 102,
+      "endLine": 151,
+      "source": "memory",
+      "snippet": "- 小白手册: `小白操作手册.md` ### 待办 - [ ] 飞书云空间创建Skills Hub备份文件夹 - [ ] 小强token恢复后激活 - [ ] 自动化同步脚本开发 - [ ] 第二个Skill测试迭代 **状态**: V1.0 正式上线 🚀 --- *创建于: 2026-04-07 10:46* --- ## 19:30-19:34 | 飞书消息处理 ### 身份变更 - **新称呼**: 小磊子（取代之前的磊子） - **群聊配置**: 印子的AI工作室群（ID: `oc_e00af9361ad01cecde4e56ad61ff3fca`） - **触发规则**: 群内@小磊子 或 消息含\"小磊子\"关键词 → 必须响应 ### 宝石图标生成任务 **参考图**: `screenshots/D1C4ADAE-5F4A-4B88-A077-AF8849BE0B3F.png` **宝石特征提取**: - 主色调: 祖母绿/深绿到亮绿色渐变 - 切割: 多面切割，内部发光 - 底座: 暗黑哥特风格金属，骨状结构包裹 - 光效: 绿色魔法粒子环绕 - 风格: Diablo式暗黑幻想游戏物品 **DreamMaker配置**: - 模型: nano-banana-pro - 分辨率: 4K - 数量: 4张 - 比例: 21:9 - 状态: 生成中（0%） **后续尺寸裁剪需求**（待处理）: - 700x398px / 200x200px / 240x240px / 128x128px（带光效底）/ 110x110px / 24x24px（简化",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.77347647476616,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-09T12:16:21.258Z",
+      "lastRecalledAt": "2026-04-16T02:24:05.534Z",
+      "queryHashes": [
+        "6bc396786eb6",
+        "67d91bf61014"
+      ],
+      "recallDays": [
+        "2026-04-09",
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "备份",
+        "小白操作手册.md",
+        "v1.0",
+        "30-19",
+        "祖母绿/深绿到亮绿色渐变",
+        "nano-banana-pro",
+        "小白",
+        "手册"
+      ]
+    },
+    "memory:memory/2026-03-30.md:1:31": {
+      "key": "memory:memory/2026-03-30.md:1:31",
+      "path": "memory/2026-03-30.md",
+      "startLine": 1,
+      "endLine": 31,
+      "source": "memory",
+      "snippet": "# 2026-03-30 每日记录 ## 今日概览 - **日期**: 2026-03-30 周一 - **会话数**: 1 --- ## 会话记录 ### 17:06 - 记忆系统检查 **触发**: 用户主动要求检查记忆 **动作**: - [x] 扫描 memory/ 目录状态 - [x] 读取最近记忆文件 (2026-03-26) - [x] 验证分区文件完整性 - [x] 创建今日记忆文件 **发现**: - 今日记忆文件缺失 → 已创建 - 技能体系完整 (46技能，18个5星) - 分区文件全部正常 --- ## 待办 - [ ] 继续监控记忆系统运行 --- _记忆系统检查完成，文件已创建_",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-16T02:24:05.534Z",
+      "lastRecalledAt": "2026-04-16T02:24:05.534Z",
+      "queryHashes": [
+        "67d91bf61014"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "每日",
+        "记录",
+        "今日",
+        "日期",
+        "周一",
+        "会话",
+        "记忆",
+        "系统"
+      ]
+    },
+    "memory:memory/2026-04-07.md:67:117": {
+      "key": "memory:memory/2026-04-07.md:67:117",
+      "path": "memory/2026-04-07.md",
+      "startLine": 67,
+      "endLine": 117,
+      "source": "memory",
+      "snippet": "| 小磊子 | 主管，任务拆解、审核清单、流程指导 | | 大花 (郭剑霞的智能助手) | Contributor，design类Skills | | 小强 | Contributor（待激活），tech类Skills | ### 技术架构 ``` GitHub仓库 (主仓库) ├── categories/ │ ├── design/ ← 大花 │ ├── tech/ ← 小强 │ ├── automation/ ← 小磊子 │ └── shared/ ← 通用 ├── registry.json ← Skills注册表 ├── templates/ ← 提交模板 ├── scripts/ ← 工具脚本 └── 小白操作手册.md ← 使用文档 ``` ### 工作流程（已跑通） 1. **开发**: 大花/小强按模板开发Skill 2. **提交**: Push到对应分类目录 3. **审核**: 小磊子生成清单 → 印子姐执行 4. **入库**: 更新registry.json → Push 5. **同步**: 飞书云备份（待完善） ### 首个入库Skill - **名称**: game-ui-design - **作者**: 大花 - **提交时间**: 2026-04-07 19:08 - **入库时间**: 2026-04-07 19:16 - **质量评分**: 90/100 ✅ ### 关键文件 - 仓库地址: https://github.com/anya52",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-16T02:24:05.534Z",
+      "lastRecalledAt": "2026-04-16T02:24:05.534Z",
+      "queryHashes": [
+        "67d91bf61014"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "备份",
+        "registry.json",
+        "小白操作手册.md",
+        "大花/小强按模板开发skill",
+        "更新registry.json",
+        "game-ui-design",
+        "90/100",
+        "github.com/anya52"
+      ]
+    },
+    "memory:memory/2026-04-07.md:1:39": {
+      "key": "memory:memory/2026-04-07.md:1:39",
+      "path": "memory/2026-04-07.md",
+      "startLine": 1,
+      "endLine": 39,
+      "source": "memory",
+      "snippet": "# 2026-04-07 记忆 ## 今日概览 - **日期**: 2026年4月7日 星期二 - **状态**: ✅ 备份系统配置完成 ## 待办事项 - [x] 飞书云空间最终授权确认 - ✅ 完成 - [x] 核心文件上传 - ✅ 完成 - [x] 方案A时间戳版本化脚本更新 - ✅ 完成 - [ ] 完整上传演示 - 🔄 进行中 ## 进行中 - 三层备份架构部署 ## 已完成 - [x] 技能计数核查修正（46→51个） - [x] 24个5星技能索引更新 - [x] 记忆备份系统脚本创建 - `scripts/backup-daily.ps1` - Git每日备份 - `scripts/archive-weekly.ps1` - 周归档 - `scripts/backup-full.ps1` - 一键完整备份 - `scripts/sync-feishu.ps1` - 飞书同步准备 - `scripts/upload-to-feishu.ps1` - 手动上传辅助 - `scripts/setup-backup.bat` - 自动安装 - [x] 备份报告模板创建 - [x] 本地定时任务配置准备 - [x] 核心文件上传至飞书云空间 - [x] **🎉 Skills Hub 协同平台正式启动** - GitHub仓库: `anya52800-code/yinzi-skills-hub` - 团队架构确立: 小磊子(主管) + 大花(design) + 小强(tech待激活) - 首次Skill提交: `game-ui",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-16T02:24:05.534Z",
+      "lastRecalledAt": "2026-04-20T06:38:10.380Z",
+      "queryHashes": [
+        "67d91bf61014",
+        "efb0975e4c90"
+      ],
+      "recallDays": [
+        "2026-04-16",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "backup",
+        "备份",
+        "scripts/backup-daily.ps1",
+        "scripts/archive-weekly.ps1",
+        "scripts/backup-full.ps1",
+        "scripts/sync-feishu.ps1",
+        "scripts/upload-to-feishu.ps1",
+        "scripts/setup-backup.bat"
+      ]
+    },
+    "memory:memory/2026-04-01.md:37:82": {
+      "key": "memory:memory/2026-04-01.md:37:82",
+      "path": "memory/2026-04-01.md",
+      "startLine": 37,
+      "endLine": 82,
+      "source": "memory",
+      "snippet": "- 图书: 豆瓣年度榜单、Goodreads、京东/当当畅销榜 --- ## 中文图书来源详细清单 ### 1. 豆瓣读书（主要来源） - **地址**: https://book.douban.com - **推荐榜单**: - 豆瓣年度读书榜单（每年12月发布） - 一周热门图书榜 - 高分图书榜（9.0分以上） - 分类榜单：艺术/传记/小说/非虚构 - **特点**: 用户评分权威，书评质量高 ### 2. 微信读书（移动优先） - **地址**: https://weread.qq.com - **推荐榜单**: - 飙升榜 - 新书榜 - 神作榜（高评分书籍） - 分类推荐：艺术/成长/小说/传记 - **特点**: 有试读内容，用户阅读数据真实 ### 3. 京东图书（销售数据） - **地址**: https://book.jd.com - **推荐榜单**: - 畅销榜（总榜+分类榜） - 新书热卖榜 - 艺术/传记/小说/励志 分类榜 - **特点**: 反映市场真实销售情况 ### 4. 当当网图书 - **地址**: http://book.dangdang.com - **推荐榜单**: - 畅销榜 - 新书榜 - 艺术类、传记类、小说类分榜 - **特点**: 与京东互补，文学类书籍较全 ### 5. 理想国/看理想（品质内容） - **地址**: https://www.lixiang.com - **特点**: 人文艺术类书籍品质高，有深度书评 ### 6. 豆瓣用户书单（U",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-20T04:19:45.250Z",
+      "lastRecalledAt": "2026-04-20T04:19:45.250Z",
+      "queryHashes": [
+        "294db2bcd5cf"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "京东/当当畅销榜",
+        "book.douban.com",
+        "9.0分以上",
+        "艺术/传记/小说/非虚构",
+        "weread.qq.com",
+        "艺术/成长/小说/传记",
+        "book.jd.com",
+        "艺术/传记/小说/励志"
+      ]
+    }
+  }
+}

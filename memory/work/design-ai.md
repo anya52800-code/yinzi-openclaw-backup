@@ -1,17 +1,18 @@
+# AI生图工作流 - DreamMaker
 
+> AI浏览器自动化 + 图像生成 | 网易DreamMaker平台
 
 ---
 
-## AI生图工作流 - DreamMaker (2026-04-01)
+## 概述
 
-### 概述
 **技能类型**: AI浏览器自动化 + 图像生成  
 **工具**: DreamMaker (网易AI美术平台)  
 **核心**: 自主操作浏览器完成AI生图全流程
 
 ---
 
-### 标准工作流程
+## 标准工作流程
 
 ```
 1. 打开DreamMaker 2D创作
@@ -37,14 +38,14 @@
 
 ---
 
-### 提示词工程最佳实践
+## 提示词工程最佳实践
 
-#### ✅ 黄金公式
+### ✅ 黄金公式
 ```
 任务类型 + 核心要求 + 具体细节 + 限制条件
 ```
 
-#### ✅ 成功案例（去背景）
+### ✅ 成功案例（去背景）
 ```
 Remove background from reference image, make it transparent PNG.
 Keep ALL design elements EXACTLY as reference image:
@@ -57,7 +58,7 @@ Generate both:
 Only remove background. Nothing else changes.
 ```
 
-#### ❌ 避免的坑
+### ❌ 避免的坑
 | 问题 | 解决方案 |
 |------|----------|
 | 提示词过于复杂 | 使用极简提示词 |
@@ -65,14 +66,14 @@ Only remove background. Nothing else changes.
 | 没有明确限制 | 添加"不要做XX" |
 | 多次迭代后失真 | 回到极简版本重新开始 |
 
-#### 💡 核心原则
+### 💡 核心原则
 > **简单 > 复杂**  
 > **明确指令 > 描述性语言**  
 > **限制条件 > 创意发挥**
 
 ---
 
-### 浏览器操作命令集
+## 浏览器操作命令集
 
 ```javascript
 // 导航
@@ -99,7 +100,7 @@ browser snapshot refs=aria
 
 ---
 
-### 实战记录：暗黑破坏神LOGO生成
+## 实战记录：暗黑破坏神LOGO生成
 
 **轮次**: 6轮迭代优化
 
@@ -122,7 +123,7 @@ Only remove background. Nothing else changes.
 
 ---
 
-### 自动化触发条件
+## 自动化触发条件
 
 **用户可直接说**：
 - "用DreamMaker生成XX图"
@@ -139,7 +140,7 @@ Only remove background. Nothing else changes.
 
 ---
 
-### 相关文件
+## 相关文件
 - 参考图: `screenshots/3d4d988a228c4843a2ac68.png`
 - 详细记录: `memory/2026-04-01.md`
 

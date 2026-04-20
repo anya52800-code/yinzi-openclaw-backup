@@ -11,7 +11,7 @@
 
 | 分区 | 文件路径 | 内容类型 |
 |------|----------|----------|
-| **工作区** | `memory/work/design.md` | 设计专业、技能、项目经验 |
+| **工作区** | `memory/work/design-ai.md`<br>`memory/work/design-comm.md` | AI生图技能<br>设计沟通技能 |
 | **职场区** | `memory/work/career.md` | 汇报技巧、领导关系、升职加薪 |
 | **生活区** | `memory/life/casual.md` | 闲聊、趣事、生活感悟 |
 | 每日记录 | `memory/YYYY-MM-DD.md` | 当日原始对话记录 |
@@ -35,7 +35,10 @@
 **行为风格**: 直接、有主见、简洁、带点野
 
 ## 工作规范（2026-03-19 更新）
-> 详见 `memory/work/design.md`
+> 详见 `memory/work/design-ai.md`（AI生图）
+> 详见 `memory/work/design-comm.md`（设计沟通）
+> 
+> **设计技能分类原则**（2026-04-17）：UI/UX、品牌、动效等纯设计技能不细分，统一归为设计能力；仅按**工具/场景**拆分（AI生图、设计沟通）
 
 ## Skills 星级优先级（2026-03-26 建立）
 > 详见 `memory/work/skills-priority.md`
@@ -64,6 +67,8 @@
 **底线**: 这是基础维护工作，印子姐不提醒，我主动做。
 
 ## 最近更新
+- 2026-04-17: **工作区技能细分** → `design-ai.md` (AI生图) + `design-comm.md` (设计沟通/英文邮件)
+- 2026-04-17: 新增**游戏行业专业英文邮件翻译**技能 → 详见 `memory/work/design-comm.md`
 - 2026-03-18: 添加文件输出规范（所有产出放入 screenshots）
 - 2026-03-18: 记忆系统正式搭建
 - 2026-03-11: 文件创建
