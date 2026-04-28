@@ -109,4 +109,75 @@ Option B (Lightweight): [Feature], optimized for [requirement].
 
 ---
 
-_记录时间: 2026-04-17 | 技能状态: ✅ 已掌握并归档_
+### 设计修改反馈邮件（2026-04-28 更新）
+
+**场景**: 向暴雪反馈设计修改版本，说明视觉优化方向
+
+**邮件模板**:
+
+```
+Subject: Updated Version - Visual Refinement Based on Feedback
+
+Hi [Name],
+
+I've updated the design based on your feedback. Here's what changed:
+
+- Reduced visual clutter — removed excess [elements] to minimize distractions
+- Streamlined [element] — simplified [details] for cleaner readability at small sizes
+- Enhanced focus — the [key elements] now stand out more clearly
+
+Let me know if any further adjustments are needed.
+
+Best,
+```
+
+**中文对照**:
+
+| 中文原意 | 英文表达 |
+|---------|---------|
+| 根据修改建议，我又更新了一版 | I've updated the design based on your feedback. |
+| 减少了过多元素的视觉干扰 | Reduced visual clutter / minimized distracting elements |
+| 以便更好的展现符文和圆形结构 | to better highlight the runes and circular structure |
+| 减少过多的锁链和搭扣 | Removed excess chains and buckles |
+| 同时将布幔过多的褶皱进行了调整 | Streamlined the fabric drapery folds |
+| 保障在小尺寸的时候识别度更加清晰 | Ensured clearer readability at small sizes |
+
+**新增术语**:
+
+| 中文 | 英文 | 使用场景 |
+|------|------|----------|
+| 锁链 | chains | 视觉元素 |
+| 搭扣 | buckles | 视觉元素 |
+| 布幔 | drapery / fabric | 材质元素 |
+| 褶皱 | folds | 布料细节 |
+| 识别度 | readability / legibility | 多尺寸适配 |
+| 视觉干扰 | visual clutter / distractions | 设计优化 |
+
+---
+
+### Figma 组件库索引检查（2026-04-28）
+
+**文件**: G67 通用组件库 Netease
+**检查方式**: Figma REST API + Token 验证
+**权限**: Editor（可读写）
+
+**页面结构核对**:
+- Figma 实际页面: 28 个
+- 可视化索引收录: 24 个（排除4个临时页）
+
+**遗漏项分析**:
+
+| 页面 | 性质 | 是否应加入索引 |
+|------|------|--------------|
+| 导出组件 | 临时工作流页 | ❌ 否 |
+| 测试 / 测试2 / 测试界面 | 临时测试页 | ❌ 否 |
+
+**已确认包含的重要页面**:
+- ✅ 字体规范 — 独立页面，Font A-N 配置
+- ✅ 多语言适配 — 包含在 📌📌工程规范 页面内
+
+**结论**: 索引与实际结构基本对齐，无实质遗漏。临时页面不纳入组件库索引。
+
+---
+
+_记录时间: 2026-04-28 | 技能状态: ✅ 已更新_
