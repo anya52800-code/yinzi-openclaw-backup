@@ -1,4 +1,4 @@
-# 飞书云空间每日快照上传
+﻿# 飞书云空间每日快照上传
 # 每天19:05自动执行
 
 $date = Get-Date -Format "yyyy-MM-dd"
@@ -48,6 +48,7 @@ if (Test-Path "$workspace\memory\work\skills-index.md") {
     Copy-Item "$workspace\memory\work\skills-index.md" "$snapshotDir\skills\" -Force
     Write-Host "  + skills/skills-index.md"
 }
+
 if (Test-Path "$workspace\memory\work\skills-priority.md") {
     Copy-Item "$workspace\memory\work\skills-priority.md" "$snapshotDir\skills\" -Force
     Write-Host "  + skills/skills-priority.md"

@@ -1,0 +1,14 @@
+﻿飞书上传清单 - 2026-04-30
+================================
+
+目录: OpenClaw-Backup/2-daily-snapshot/2026-04-30/
+
+步骤:
+1. 创建文件夹: 2-daily-snapshot/2026-04-30/
+2. 解压 snapshot-2026-04-30.zip 到该文件夹
+3. 同时更新 1-latest/ 下的文件
+
+本地文件:
+- C:\Users\jxguo\.openclaw\workspace\backup\snapshot-2026-04-30.zip
+- C:\Users\jxguo\.openclaw\workspace\backup\snapshot-2026-04-30\
+

@@ -68,12 +68,37 @@
 **底线**: 这是基础维护工作，印子姐不提醒，我主动做。
 
 ## 最近更新
+- 2026-04-30: **系统配置教训** — Key配置分散导致web_search 401；备份脚本语法错误23天未生成快照；均已修复
 - 2026-04-24: 新增**老板好汇报模板**（简体版）→ 详见 `memory/work/career.md`
 - 2026-04-17: **工作区技能细分** → `design-ai.md` (AI生图) + `design-comm.md` (设计沟通/英文邮件)
 - 2026-04-17: 新增**游戏行业专业英文邮件翻译**技能 → 详见 `memory/work/design-comm.md`
 - 2026-03-18: 添加文件输出规范（所有产出放入 screenshots）
 - 2026-03-18: 记忆系统正式搭建
 - 2026-03-11: 文件创建
+
+---
+
+## 系统配置教训（2026-04-30）
+
+### Key 配置分散问题
+**现象**: 聊天正常但 web_search 报 401  
+**根因**: OpenClaw 的 key 配置是分散的——聊天、搜索、插件各自独立存 key
+- 聊天: `auth-profiles.json` (`kimi-coding:default`)
+- 搜索: `plugins.entries.moonshot.config.webSearch.apiKey`
+- 模型: `models.json` 里的 `apiKey`
+
+**教训**: 以后换 key 必须检查所有配置路径，不能只改一处。
+
+### 备份脚本静默失败
+**现象**: 定时任务每天运行但从未生成快照文件  
+**根因**: `upload-to-feishu.ps1` 第51行多余 `}`，PowerShell 解析失败  
+**影响**: 2026-04-07 至今（23天）飞书备份处于"虚假运行"状态  
+**修复**: 重写脚本，已验证正常生成快照
+
+### web_search 已恢复
+- **状态**: ✅ 正常
+- **provider**: kimi-k2.6
+- **配置路径**: `plugins.entries.moonshot.config.webSearch.apiKey`
 
 ---
 _在此记录重要的决策、洞察、需要长期记住的事情_
