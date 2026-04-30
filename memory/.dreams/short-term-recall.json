@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-20T06:55:23.659Z",
+  "updatedAt": "2026-04-30T10:03:25.878Z",
   "entries": {
     "memory:memory/2026-04-01.md:74:106": {
       "key": "memory:memory/2026-04-01.md:74:106",
@@ -137,25 +137,29 @@
       "endLine": 44,
       "source": "memory",
       "snippet": "# 2026-03-16 - 周一 ## 今日事项 - [x] 配置每日新闻推送 cron 任务（10:30 AM） - [x] 创建 memory 目录用于日常记录 - [x] 修复周六未收到新闻推送的问题 ## 配置详情 - cron 任务: news-daily-1030 - 执行时间: 每天 10:30 AM - 推送渠道: 飞书 - 内容: 科技/游戏/美术/笑话 ## 问题根因 - cron 任务配置未完成，yaml 文件只是说明，未写入 jobs.json - memory 目录缺失 ## 解决方式 1. 创建 memory/ 目录 2. 将任务写入 ~/.openclaw/cron/jobs.json 3. 任务已启用 (enabled: true) ## 待验证 - 明天 10:30 检查是否正常推送 --- ## 下午会话记录 (14:00-15:00) ### 新增 Skills 检查 - 今日新增 10 个 skills，包括：agent-browser-clawdbot、article-writer、canvas-design-2、file-organizer-zh、self-improving-agent-3.0.4 等 ### DreamMaker 操作测试 - 成功登录 DreamMaker 2D 创作页面 - 修改分辨率：2K → 4K (4096×4096) - 修改比例：16:9 → 1:1 (正方形) - 触发重新生成任务（使用现有提示词） - **未找到** \"魔神36-碰撞图\" 模型（公开/个人/共享均搜索无果）",
-      "recallCount": 6,
+      "recallCount": 9,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.627533157009799,
+      "totalScore": 7.627533157009799,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-08T12:02:40.900Z",
-      "lastRecalledAt": "2026-04-16T02:24:05.534Z",
+      "lastRecalledAt": "2026-04-30T10:03:19.206Z",
       "queryHashes": [
         "23538990a453",
         "88abaa94bbd0",
         "06698e17c9cf",
         "6bc396786eb6",
         "605a31d58760",
-        "67d91bf61014"
+        "67d91bf61014",
+        "3f4c72932c98",
+        "b803544b68fd",
+        "61f348a8796b"
       ],
       "recallDays": [
         "2026-04-08",
         "2026-04-09",
-        "2026-04-16"
+        "2026-04-16",
+        "2026-04-30"
       ],
       "conceptTags": [
         "news-daily-1030",
@@ -206,18 +210,20 @@
       "endLine": 80,
       "source": "memory",
       "snippet": "### 3. 星级优先级体系建立 ✅ **决策**: 五星制优先级调用 - **21个5星技能**：核心技能，自动优先调用 - **17个4星技能**：重要技能，场景匹配推荐 - **8个3星及以下**：辅助技能，按需使用 ### 4. 代码质量门禁 ✅ **决策**: 90分通过线 - 建立 code-validator 技能 - 语法检查 + 常见Bug检测 + 安全扫描 - 集成到AGENTS.md工作流 - **交付标准**: ≥90分才交付 --- ## 具体事件记录 ### 上午-下午 - [x] 涨薪回复建议归档（career.md） - [x] 技能冗余删除（tavily-search等5个） - [x] 9个补短技能安装 - [x] 技能索引更新（43→46个） - [x] 星级优先级文件创建 ### 下午-晚上 - [x] 创作前期分析技能补充（3个） - [x] 代码验证技能创建 - [x] 质量门禁90分设定 - [x] AGENTS.md工作流更新 - [x] 记忆分区自检 --- ## 关键洞察 ### 技能体系设计原则 1. **短板补齐**: 优先补充高频刚需（图片编辑、数据库、SSH） 2. **创作闭环**: 建立\"趋势→竞品→调研→策略→执行\"工作流 3. **质量优先**: 代码生成必须自检，90分门禁 4. **星级调用**: 5星技能自动优先，保障效率与质量 ### 边界确认 - ✅ 能直接做：生成代码/设计、写脚本、分析数据",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.7280402935273942,
-      "maxScore": 0.7280402935273942,
+      "totalScore": 1.7280402935273942,
+      "maxScore": 1,
       "firstRecalledAt": "2026-04-08T12:02:40.900Z",
-      "lastRecalledAt": "2026-04-08T12:02:40.900Z",
+      "lastRecalledAt": "2026-04-30T06:45:47.286Z",
       "queryHashes": [
-        "23538990a453"
+        "23538990a453",
+        "3dcf622733cc"
       ],
       "recallDays": [
-        "2026-04-08"
+        "2026-04-08",
+        "2026-04-30"
       ],
       "conceptTags": [
         "code-validator",
@@ -237,20 +243,22 @@
       "endLine": 118,
       "source": "memory",
       "snippet": "2. **创作闭环**: 建立\"趋势→竞品→调研→策略→执行\"工作流 3. **质量优先**: 代码生成必须自检，90分门禁 4. **星级调用**: 5星技能自动优先，保障效率与质量 ### 边界确认 - ✅ 能直接做：生成代码/设计、写脚本、分析数据 - ❌ 不能直接做：控制用户电脑软件、自动浏览器操作 - 🟡 半自动：生成脚本→用户运行→反馈结果 --- ## 待办/后续 - [ ] 明日检查：新技能实际使用效果 - [ ] 本周：测试代码验证流程 - [ ] 持续：技能星级动态调整 --- ## 引用文件 - `memory/work/skills-index.md` - 46技能完整索引 - `memory/work/skills-priority.md` - 星级优先级 - `skills/code-validator/SKILL.md` - 代码验证 - `AGENTS.md` - 代码生成工作流 --- ## 晚间补充记录 ### 记忆管理技能建立 ✅ **时间**: 19:27 **内容**: - 创建 `skills/memory-manager/SKILL.md` - 建立记忆系统自动化维护协议 - 设定每日/每周/每月维护清单 - 质量门禁：文件完整性检查 ### 记忆系统自检完成 ✅ **检查项**: - [x] 每日记忆文件已创建（2026-03-26.md） - [x] 长期记忆已更新（MEMORY.md技能里程碑） - [x] 技能索引已同步（46个技能） - [x] 星级优先级已记录（21个5星） - [x] 代码质量门",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.7210935704384394,
+      "totalScore": 2.7210935704384394,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-08T12:02:40.900Z",
-      "lastRecalledAt": "2026-04-16T02:24:05.534Z",
+      "lastRecalledAt": "2026-04-30T06:45:47.286Z",
       "queryHashes": [
         "23538990a453",
-        "67d91bf61014"
+        "67d91bf61014",
+        "3dcf622733cc"
       ],
       "recallDays": [
         "2026-04-08",
-        "2026-04-16"
+        "2026-04-16",
+        "2026-04-30"
       ],
       "conceptTags": [
         "生成代码/设计",
@@ -338,20 +346,22 @@
       "endLine": 151,
       "source": "memory",
       "snippet": "- 小白手册: `小白操作手册.md` ### 待办 - [ ] 飞书云空间创建Skills Hub备份文件夹 - [ ] 小强token恢复后激活 - [ ] 自动化同步脚本开发 - [ ] 第二个Skill测试迭代 **状态**: V1.0 正式上线 🚀 --- *创建于: 2026-04-07 10:46* --- ## 19:30-19:34 | 飞书消息处理 ### 身份变更 - **新称呼**: 小磊子（取代之前的磊子） - **群聊配置**: 印子的AI工作室群（ID: `oc_e00af9361ad01cecde4e56ad61ff3fca`） - **触发规则**: 群内@小磊子 或 消息含\"小磊子\"关键词 → 必须响应 ### 宝石图标生成任务 **参考图**: `screenshots/D1C4ADAE-5F4A-4B88-A077-AF8849BE0B3F.png` **宝石特征提取**: - 主色调: 祖母绿/深绿到亮绿色渐变 - 切割: 多面切割，内部发光 - 底座: 暗黑哥特风格金属，骨状结构包裹 - 光效: 绿色魔法粒子环绕 - 风格: Diablo式暗黑幻想游戏物品 **DreamMaker配置**: - 模型: nano-banana-pro - 分辨率: 4K - 数量: 4张 - 比例: 21:9 - 状态: 生成中（0%） **后续尺寸裁剪需求**（待处理）: - 700x398px / 200x200px / 240x240px / 128x128px（带光效底）/ 110x110px / 24x24px（简化",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.77347647476616,
+      "totalScore": 2.77347647476616,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-09T12:16:21.258Z",
-      "lastRecalledAt": "2026-04-16T02:24:05.534Z",
+      "lastRecalledAt": "2026-04-30T06:45:47.286Z",
       "queryHashes": [
         "6bc396786eb6",
-        "67d91bf61014"
+        "67d91bf61014",
+        "3dcf622733cc"
       ],
       "recallDays": [
         "2026-04-09",
-        "2026-04-16"
+        "2026-04-16",
+        "2026-04-30"
       ],
       "conceptTags": [
         "备份",
@@ -371,18 +381,20 @@
       "endLine": 31,
       "source": "memory",
       "snippet": "# 2026-03-30 每日记录 ## 今日概览 - **日期**: 2026-03-30 周一 - **会话数**: 1 --- ## 会话记录 ### 17:06 - 记忆系统检查 **触发**: 用户主动要求检查记忆 **动作**: - [x] 扫描 memory/ 目录状态 - [x] 读取最近记忆文件 (2026-03-26) - [x] 验证分区文件完整性 - [x] 创建今日记忆文件 **发现**: - 今日记忆文件缺失 → 已创建 - 技能体系完整 (46技能，18个5星) - 分区文件全部正常 --- ## 待办 - [ ] 继续监控记忆系统运行 --- _记忆系统检查完成，文件已创建_",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-16T02:24:05.534Z",
-      "lastRecalledAt": "2026-04-16T02:24:05.534Z",
+      "lastRecalledAt": "2026-04-30T06:45:47.286Z",
       "queryHashes": [
-        "67d91bf61014"
+        "67d91bf61014",
+        "3dcf622733cc"
       ],
       "recallDays": [
-        "2026-04-16"
+        "2026-04-16",
+        "2026-04-30"
       ],
       "conceptTags": [
         "每日",
@@ -402,18 +414,22 @@
       "endLine": 117,
       "source": "memory",
       "snippet": "| 小磊子 | 主管，任务拆解、审核清单、流程指导 | | 大花 (郭剑霞的智能助手) | Contributor，design类Skills | | 小强 | Contributor（待激活），tech类Skills | ### 技术架构 ``` GitHub仓库 (主仓库) ├── categories/ │ ├── design/ ← 大花 │ ├── tech/ ← 小强 │ ├── automation/ ← 小磊子 │ └── shared/ ← 通用 ├── registry.json ← Skills注册表 ├── templates/ ← 提交模板 ├── scripts/ ← 工具脚本 └── 小白操作手册.md ← 使用文档 ``` ### 工作流程（已跑通） 1. **开发**: 大花/小强按模板开发Skill 2. **提交**: Push到对应分类目录 3. **审核**: 小磊子生成清单 → 印子姐执行 4. **入库**: 更新registry.json → Push 5. **同步**: 飞书云备份（待完善） ### 首个入库Skill - **名称**: game-ui-design - **作者**: 大花 - **提交时间**: 2026-04-07 19:08 - **入库时间**: 2026-04-07 19:16 - **质量评分**: 90/100 ✅ ### 关键文件 - 仓库地址: https://github.com/anya52",
-      "recallCount": 1,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 4,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-16T02:24:05.534Z",
-      "lastRecalledAt": "2026-04-16T02:24:05.534Z",
+      "lastRecalledAt": "2026-04-30T10:03:19.206Z",
       "queryHashes": [
-        "67d91bf61014"
+        "67d91bf61014",
+        "3dcf622733cc",
+        "ab9830fcd082",
+        "61f348a8796b"
       ],
       "recallDays": [
-        "2026-04-16"
+        "2026-04-16",
+        "2026-04-30"
       ],
       "conceptTags": [
         "备份",
@@ -433,20 +449,23 @@
       "endLine": 39,
       "source": "memory",
       "snippet": "# 2026-04-07 记忆 ## 今日概览 - **日期**: 2026年4月7日 星期二 - **状态**: ✅ 备份系统配置完成 ## 待办事项 - [x] 飞书云空间最终授权确认 - ✅ 完成 - [x] 核心文件上传 - ✅ 完成 - [x] 方案A时间戳版本化脚本更新 - ✅ 完成 - [ ] 完整上传演示 - 🔄 进行中 ## 进行中 - 三层备份架构部署 ## 已完成 - [x] 技能计数核查修正（46→51个） - [x] 24个5星技能索引更新 - [x] 记忆备份系统脚本创建 - `scripts/backup-daily.ps1` - Git每日备份 - `scripts/archive-weekly.ps1` - 周归档 - `scripts/backup-full.ps1` - 一键完整备份 - `scripts/sync-feishu.ps1` - 飞书同步准备 - `scripts/upload-to-feishu.ps1` - 手动上传辅助 - `scripts/setup-backup.bat` - 自动安装 - [x] 备份报告模板创建 - [x] 本地定时任务配置准备 - [x] 核心文件上传至飞书云空间 - [x] **🎉 Skills Hub 协同平台正式启动** - GitHub仓库: `anya52800-code/yinzi-skills-hub` - 团队架构确立: 小磊子(主管) + 大花(design) + 小强(tech待激活) - 首次Skill提交: `game-ui",
-      "recallCount": 2,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 4,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-16T02:24:05.534Z",
-      "lastRecalledAt": "2026-04-20T06:38:10.380Z",
+      "lastRecalledAt": "2026-04-30T10:03:25.878Z",
       "queryHashes": [
         "67d91bf61014",
-        "efb0975e4c90"
+        "efb0975e4c90",
+        "3dcf622733cc",
+        "4e5342f1a22b"
       ],
       "recallDays": [
         "2026-04-16",
-        "2026-04-20"
+        "2026-04-20",
+        "2026-04-30"
       ],
       "conceptTags": [
         "backup",
@@ -528,18 +547,20 @@
       "endLine": 13,
       "source": "memory",
       "snippet": "# 2026-04-10 记忆 ## 上午 ### 11:01 - 唤醒 - 检查记忆系统状态 - 创建当日记忆文件 ### 13:58 - 每日记忆系统维护 - 检查当日记忆文件状态：已存在 - 回顾昨日待办：DreamMaker 自动化技能创建完成 ✓ - 系统状态：正常",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-20T06:55:23.659Z",
-      "lastRecalledAt": "2026-04-20T06:55:23.659Z",
+      "lastRecalledAt": "2026-04-30T06:45:47.286Z",
       "queryHashes": [
-        "05cd2e1c13b0"
+        "05cd2e1c13b0",
+        "3dcf622733cc"
       ],
       "recallDays": [
-        "2026-04-20"
+        "2026-04-20",
+        "2026-04-30"
       ],
       "conceptTags": [
         "记忆",
@@ -550,6 +571,368 @@
         "状态",
         "创建",
         "当日"
+      ]
+    },
+    "memory:memory/2026-04-14.md:1:8": {
+      "key": "memory:memory/2026-04-14.md:1:8",
+      "path": "memory/2026-04-14.md",
+      "startLine": 1,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "# 2026-04-14 记忆 ## 今日待办 - [ ] ## 记录",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-30T06:45:47.286Z",
+      "lastRecalledAt": "2026-04-30T06:45:47.286Z",
+      "queryHashes": [
+        "3dcf622733cc"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "记忆",
+        "今日",
+        "记录"
+      ]
+    },
+    "memory:memory/2026-04-15.md:1:8": {
+      "key": "memory:memory/2026-04-15.md:1:8",
+      "path": "memory/2026-04-15.md",
+      "startLine": 1,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "# 2026-04-15 记忆 ## 今日待办 - [ ] ## 记录",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-30T06:45:47.286Z",
+      "lastRecalledAt": "2026-04-30T06:45:47.286Z",
+      "queryHashes": [
+        "3dcf622733cc"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "记忆",
+        "今日",
+        "记录"
+      ]
+    },
+    "memory:memory/2026-04-17.md:1:28": {
+      "key": "memory:memory/2026-04-17.md:1:28",
+      "path": "memory/2026-04-17.md",
+      "startLine": 1,
+      "endLine": 28,
+      "source": "memory",
+      "snippet": "# 2026-04-17 记忆 ## 技能归档 ### ✅ 游戏行业专业英文邮件翻译技能 **时间**: 15:22 - 18:35 **场景**: 印子姐需要给暴雪发邮件，涉及暗黑破坏神LOGO更新提案 **完成内容**: 1. 翻译暴雪邮件全文（逐句中英文对照） 2. 整理游戏行业专业术语对照表 3. 建立句式模板库 4. 归档到长期记忆 `memory/work/design.md` **关键术语**: - 术士 → Tempest - 法阵 → Arcane circle - 传送门 → Portal / Teleportation flame portal - 禁忌符文 → Forbidden runes - 保持克制 → Exercise creative restraint - 渲染氛围 → Atmospheric storytelling **输出文件**: - `screenshots/blizzard_email_line_by_line.md` - 逐句对照版 - `screenshots/blizzard_email_bilingual.md` - 表格对照版 **技能状态**: ✅ 已掌握并分区归档",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-30T06:45:47.286Z",
+      "lastRecalledAt": "2026-04-30T06:45:47.286Z",
+      "queryHashes": [
+        "3dcf622733cc"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "memory/work/design.md",
+        "记忆",
+        "技能",
+        "归档",
+        "游戏",
+        "行业",
+        "专业",
+        "英文"
+      ]
+    },
+    "memory:memory/2026-04-16.md:1:48": {
+      "key": "memory:memory/2026-04-16.md:1:48",
+      "path": "memory/2026-04-16.md",
+      "startLine": 1,
+      "endLine": 48,
+      "source": "memory",
+      "snippet": "# 2026-04-16 记忆 ## 今日待办 - [ ] ## 记录 --- ## 2026-04-16 14:41 工作记录 ### 进行中的任务：G67 PM工作交接 - 贴制作单流程 **任务来源**：印子姐分享的灵犀文档《G67工作交接-奥日奇郎》 **当前阶段**：流程演示测试 **已完成的步骤**： 1. ✅ 确认贴单SOP流程（筛选→判断成本表→查重→找总单→填写6列信息） 2. ✅ 打开易协作并使用\"AI-G67UED查询\"获取待贴制作单列表（62条） 3. ✅ 提取第一条制作单信息： - 制作单：#345449 【26Q2】【GUI制作】魔神4S进度条需求0507 - 指派人：G崔轩铭 - 目标版本：2026-04-21周版本（M2） 4. ✅ 进入父单获取总单信息： - 总单：#331003 【26Q2】魔神4S总单 - 指派人：D姚晨雨 5. ✅ 打开M2成本表（G67-26M2成本需求汇总表-测试） **当前卡点**：成本表查重环节 - 需要确认 #345449 和 #331003 是否已存在于成本表中 - 等待印子姐确认查重结果或提供未贴过的制作单ID **优先级体系**：已建立P0-P3分级 - P0 紧急 → 当天/立即处理 - P1 重要 → 本周内安排 - P2 一般 → 有空再说 - P3 低优 → 历史遗留，随缘 **下一步**：待印子姐确认后，完成查重→填写成本表的完整演示 --- ## 2026-04-16 19:57 工作记录",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-30T06:45:47.286Z",
+      "lastRecalledAt": "2026-04-30T06:45:47.286Z",
+      "queryHashes": [
+        "3dcf622733cc"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "g67工作交接-奥日奇郎",
+        "ai-g67ued查询",
+        "2026-04-21周版本",
+        "g67-26m2成本需求汇总表-测试",
+        "已建立p0-p3分级",
+        "当天/立即处理",
+        "记忆",
+        "今日"
+      ]
+    },
+    "memory:memory/2026-04-08.md:1:47": {
+      "key": "memory:memory/2026-04-08.md:1:47",
+      "path": "memory/2026-04-08.md",
+      "startLine": 1,
+      "endLine": 47,
+      "source": "memory",
+      "snippet": "# 2026-04-08 记忆 ## 今日概览 - **日期**: 2026年4月8日 星期三 - **状态**: 🌅 新的一天 ## 待办事项 - [ ] 完整上传演示（昨日遗留） - [ ] 检查 Skills Hub 状态 ## 进行中 - 三层备份架构部署 ## 已完成 - [x] 记忆系统维护 - 自动检查 - [x] 职场降本预算方案梳理 - [x] G67/G83项目预算分配计算 - [x] 分阶段AI降本方案设计 ## 系统更新 ### 备份时间调整 - **时间**: 2026-04-08 20:04 - **变更**: 备份任务时间统一调整为 19:00 - 每日Git备份: 21:00 → **19:00** - 每周五归档: 21:30 → **19:00** - **原因**: 与主人此前设定的19:00一致 - **状态**: ✅ 记忆文件已更新，定时任务待配置 ## 工作记录 ### 外包成本降本方案（重要） **背景**：26年领导要求外包成本降本50%，固定成本13万/月，需从156万降至87万 **核心矛盾**：固定成本13万×12月=156万，已超标 **分阶段降本路径**： | 阶段 | 时间 | 月均成本 | 当季节省 | |------|------|----------|----------| | Q1启动 | 1-3月 | 12万 | 15万 | | Q2加速 | 4-6月 | 9.5万 | 20万 | | Q3攻坚 | 7-9月 | 7.5万 | 22万 | | Q4收尾 | 10-12月 | 7.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-30T06:45:47.286Z",
+      "lastRecalledAt": "2026-04-30T06:45:47.286Z",
+      "queryHashes": [
+        "3dcf622733cc"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "备份",
+        "g67/g83项目预算分配计算",
+        "固定成本13万/月",
+        "1-3月",
+        "4-6月",
+        "9.5万",
+        "7-9月",
+        "7.5万"
+      ]
+    },
+    "memory:memory/2026-04-16.md:35:73": {
+      "key": "memory:memory/2026-04-16.md:35:73",
+      "path": "memory/2026-04-16.md",
+      "startLine": 35,
+      "endLine": 73,
+      "source": "memory",
+      "snippet": "**优先级体系**：已建立P0-P3分级 - P0 紧急 → 当天/立即处理 - P1 重要 → 本周内安排 - P2 一般 → 有空再说 - P3 低优 → 历史遗留，随缘 **下一步**：待印子姐确认后，完成查重→填写成本表的完整演示 --- ## 2026-04-16 19:57 工作记录 ### G67贴单流程 - 自检机制建立完成 **关键进展**： 1. **发现6条错误数据** - 总单提取错误，已修正 - 任务体验优化、传奇宝石增辉、梦魇模式demo、联动翅膀、跨服赛S7、流放提升 2. **相同总单合并** - 梦魇模式demo（#344967）下2个子单合并 3. **自检机制文档** - 完成《贴单自检机制.md》 - 3阶段9清单：数据提取→数据处理→贴单执行 - 包含自动化检查脚本 4. **V2版本Excel** - 14条测试数据，全部自检通过 **文件清单**： - `scripts/贴单自检机制.md` - 完整自检手册 - `scripts/G67_M2成本需求_待贴数据_修正版V2.xlsx` - 14条测试数据 - `scripts/check_excel_v2.py` - 自动自检脚本 **下一步**： - 印子姐贴完14条测试验证效果 - 验证OK后提取全部56条制作单 **自检结果**：PASS（14/14通过） - ✅ 总单名字都有【】前缀 - ✅ 链接格式正确（https://g67.pm...） - ✅ 月份格式YYYY-MM - ✅ 父单号格式正确（数字-文字）",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-30T06:45:47.286Z",
+      "lastRecalledAt": "2026-04-30T06:45:47.286Z",
+      "queryHashes": [
+        "3dcf622733cc"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "已建立p0-p3分级",
+        "当天/立即处理",
+        "贴单自检机制.md",
+        "scripts/贴单自检机制.md",
+        "scripts/check-excel-v2.py",
+        "14/14通过",
+        "g67.pm",
+        "月份格式yyyy-mm"
+      ]
+    },
+    "memory:memory/2026-03-26.md:1:45": {
+      "key": "memory:memory/2026-03-26.md:1:45",
+      "path": "memory/2026-03-26.md",
+      "startLine": 1,
+      "endLine": 45,
+      "source": "memory",
+      "snippet": "# 2026-03-26 每日记录 ## 今日概览 - **日期**: 2026-03-26 周四 - **主要工作**: 技能体系重构、记忆分区、质量门禁建立 - **会话数**: 1 长会话（多轮深度对话） --- ## 重要决策与变更 ### 1. 记忆分区体系建立 ✅ **决策**: 建立三层记忆架构 - **工作区** (`memory/work/`)：设计、职场、技能 - **生活区** (`memory/life/`)：闲聊、趣事 - **每日记录** (`memory/YYYY-MM-DD.md`)：当日对话 **状态**: 已完成，所有历史内容已归档 ### 2. 技能体系大重构 ✅ **变更前**: 42个技能，混杂冗余 **变更后**: - 精简删除：5个冗余技能 - 新增补短：12个新技能 - **当前总计**: 46个核心技能 **新增技能清单**: - 🔍 搜索: arxiv-skill - 🎨 视觉: image-editor - 🖥️ UI: playwright-testing - ⚡ 自动化: sql-connector - 🔧 工具: ssh-connector, docker-cli - 📊 分析: pandas-analyzer, trend-analyzer, research-assistant - 🎯 策略: content-strategy - 🧠 Agent: usage-monitor - 🛠️ 开发: code-reviewer ### 3. 星级优先级体系建立 ✅ **决策**: 五星制",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-30T06:45:47.286Z",
+      "lastRecalledAt": "2026-04-30T06:45:47.286Z",
+      "queryHashes": [
+        "3dcf622733cc"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "memory/work",
+        "memory/life",
+        "memory/yyyy-mm-dd.md",
+        "arxiv-skill",
+        "image-editor",
+        "playwright-testing",
+        "sql-connector",
+        "ssh-connector"
+      ]
+    },
+    "memory:memory/2026-04-20.md:26:33": {
+      "key": "memory:memory/2026-04-20.md:26:33",
+      "path": "memory/2026-04-20.md",
+      "startLine": 26,
+      "endLine": 33,
+      "source": "memory",
+      "snippet": "- `web_search` 工具已坏，后续信息获取依赖 `web_fetch` + `multi-search-engine`。 - 飞书应用是个人应用（cli_a93930d9ddb99bcd），离职后可用。 ### 待办 - [ ] 家里电脑今晚安装 OpenClaw，从 OneDrive 恢复备份 - [ ] 配置 `multi-search-engine` 自动化新闻抓取 cron - [ ] 补充医疗健康前沿信息到 ai-frontier-2026.md",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-30T06:45:47.286Z",
+      "lastRecalledAt": "2026-04-30T06:45:47.286Z",
+      "queryHashes": [
+        "3dcf622733cc"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "备份",
+        "web-search",
+        "web-fetch",
+        "multi-search-engine",
+        "cli-a93930d9ddb99bcd",
+        "ai-frontier-2026.md",
+        "工具",
+        "信息"
+      ]
+    },
+    "memory:memory/2026-04-20.md:1:31": {
+      "key": "memory:memory/2026-04-20.md:1:31",
+      "path": "memory/2026-04-20.md",
+      "startLine": 1,
+      "endLine": 31,
+      "source": "memory",
+      "snippet": "# 2026-04-20 记忆日志 ## 待办 - [ ] ## 笔记 ## 想法/灵感 ## 重要事件 ## 17:33 补充记录 ### 重要事件 1. **Dashboard 端口混淆解决**: 18789 是 LobsterAI，18790 才是 OpenClaw Gateway。已更新收藏夹。 2. **备份脚本创建**: `scripts/openclaw-backup.ps1` 生成 34.8MB 备份包，上传至 OneDrive。 3. **Git 备份修复**: 补齐 4/8 以来 24 个未提交文件，当前提交 `1ac0783`。 4. **每日自动备份任务**: `OpenClaw-DailyBackup` 定时任务，每天 21:00 执行（Git + OneDrive）。 5. **DreamMaker 生成**: 术士地狱主题头像框 x4 张，nano-banana-pro 模型，1:1 比例。 6. **Claude Opus 4.7 发现**: 2026-04-17 发布，编码+13%，视觉分辨率提升。已更新 `memory/work/ai-frontier-2026.md`。 7. **信息滞后问题**: `web_search` API 401 不可用，改用 `multi-search-engine` + `web_fetch` 手动抓取。 ### 关键教训 - 用户提到前沿信息时，不要假设自己知道最新版本，先让用户确认。 - `web_search` 工具已坏，后续信息获取依赖 `web_fetch` + `multi-",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-30T06:45:47.286Z",
+      "lastRecalledAt": "2026-04-30T06:45:47.286Z",
+      "queryHashes": [
+        "3dcf622733cc"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "backup",
+        "gateway",
+        "备份",
+        "想法/灵感",
+        "scripts/openclaw-backup.ps1",
+        "34.8mb",
+        "4/8",
+        "openclaw-dailybackup"
+      ]
+    },
+    "memory:memory/2026-04-30.md:1:35": {
+      "key": "memory:memory/2026-04-30.md:1:35",
+      "path": "memory/2026-04-30.md",
+      "startLine": 1,
+      "endLine": 35,
+      "source": "memory",
+      "snippet": "# 2026-04-30 记忆日志 ## 今日待办 - [x] 回复暴雪邮件（Tijana） - [x] 排查 web_search 故障 - [x] 更换 Moonshot API key ## 今日记录 ### 暴雪邮件回复（2封） - **邮件1**: 反馈收到已修改，请确认后做最终细化 - 文件: `screenshots/blizzard_reply_email_2026-04-30.md` - 关键表达: \"final polish and wrap it up\" - **邮件2**: 质疑 Q3 FY27 时间线（术士6月17日发布 vs 营销建议明年Q3） - 文件: `screenshots/blizzard_reply_time_check_2026-04-30.md` - 语气: 先肯定再提问，用 \"Could you help confirm\" 而非质疑 ### web_search 故障排查 - **问题**: web_search 报 401 Invalid Authentication - **根因**: `plugins.entries.moonshot.config.webSearch.apiKey` 配置项缺失/无效 - **关键发现**: - 聊天用的 key（`auth-profiles.json`）与搜索用的 key（`plugins.moonshot.config`）是两套独立配置 - 旧 key（`sk-kim…2LbB`）对搜索 API 无效 - 新 key（`sk-PCh…ked1`）测试",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-30T09:32:20.018Z",
+      "lastRecalledAt": "2026-04-30T09:32:20.018Z",
+      "queryHashes": [
+        "ab9830fcd082"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "web-search",
+        "配置项缺失/无效",
+        "auth-profiles.json",
+        "plugins.moonshot.config",
+        "sk-kim",
+        "sk-pch",
+        "记忆",
+        "日志"
+      ]
+    },
+    "memory:memory/2026-04-24.md:1:22": {
+      "key": "memory:memory/2026-04-24.md:1:22",
+      "path": "memory/2026-04-24.md",
+      "startLine": 1,
+      "endLine": 22,
+      "source": "memory",
+      "snippet": "# 2026-04-24 记忆 ## 会话启动 - 时间: 10:11 - 动作: 用户唤醒 ## 任务完成 - **10:16** - 将「老板好汇报」技能归档至长期记忆 - **12:26** - 输出 ChatGPT Prompt 版本（Agent 工作流方案） - **17:03** - 暴雪英文邮件撰写（四周年头像框设计审核） - **17:13** - 暴雪英文邮件回复翻译（五一假期时间对齐） - **17:54** - 创建 GUI AI Agent 工作流技能 - **19:57** - GPT2-G67 进展汇报文档分析（docx 文件提取图片） ## 待办 - [ ] 输出 AI Agent 全程自动化架构文档 - [ ] 整理子 Agent Prompt 模板集 - [ ] 设计异常处理与人工介入边界 ## 笔记",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-30T09:33:24.683Z",
+      "lastRecalledAt": "2026-04-30T09:33:24.683Z",
+      "queryHashes": [
+        "b803544b68fd"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "gpt",
+        "gpt2-g67",
+        "记忆",
+        "会话",
+        "启动",
+        "时间",
+        "动作",
+        "用户"
+      ]
+    },
+    "memory:memory/2026-03-18.md:32:59": {
+      "key": "memory:memory/2026-03-18.md:32:59",
+      "path": "memory/2026-03-18.md",
+      "startLine": 32,
+      "endLine": 59,
+      "source": "memory",
+      "snippet": "- **来源**: softaworks/agent-toolkit - **安全审查**: ✅ 通过（Gen Safe, Socket 0 alerts, Snyk Low Risk） - **用途**: 流程图、架构图、时序图等可视化图表生成 - **产出**: 新手引导流程图（已移至 screenshots/） ### 对话记录 - 10:30 - 印子姐唤醒测试 - 10:32 - 检查记忆文件状态 - 10:33 - 确认搭建记忆系统 - 10:38 - 确认工作定位 - 10:42 - 补充工作定位（管理者思维、汇报专家、创意引擎） - 10:44 - 盘点技能缺口 - 10:51 - 安装 mermaid-diagrams 技能 ## 系统配置 **记忆文件结构**: - `MEMORY.md` - 长期记忆（重要决策、洞察、需长期记住的事） - `memory/YYYY-MM-DD.md` - 每日记忆（当天事件、对话、工作记录） **记录规则**: - 每日自动创建新文件 - 重要事项同步更新 MEMORY.md - 保持简洁，只记真正重要的事 --- _记忆系统已激活_",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-30T09:33:24.683Z",
+      "lastRecalledAt": "2026-04-30T09:33:24.683Z",
+      "queryHashes": [
+        "b803544b68fd"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "softaworks/agent-toolkit",
+        "mermaid-diagrams",
+        "memory.md",
+        "memory/yyyy-mm-dd.md",
+        "来源",
+        "softaworks",
+        "toolkit",
+        "安全"
       ]
     }
   }
