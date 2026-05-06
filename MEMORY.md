@@ -68,6 +68,8 @@
 **底线**: 这是基础维护工作，印子姐不提醒，我主动做。
 
 ## 最近更新
+- 2026-05-06: **云盘备份恢复系统** — 建立OneDrive自动同步 + 家中电脑一键恢复脚本（`restore-from-onedrive.ps1`），详见 `memory/2026-05-06.md`
+- 2026-05-06: **游戏行业术语库扩充** — 新增品牌系统术语（Annual Thematic Expressions/锚点/弹性层等）+ 触点渠道术语（loading screens/key art/event branding），详见 `memory/work/design-comm.md`
 - 2026-04-30: **系统配置教训** — Key配置分散导致web_search 401；备份脚本语法错误23天未生成快照；均已修复
 - 2026-04-24: 新增**老板好汇报模板**（简体版）→ 详见 `memory/work/career.md`
 - 2026-04-17: **工作区技能细分** → `design-ai.md` (AI生图) + `design-comm.md` (设计沟通/英文邮件)

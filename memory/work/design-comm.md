@@ -48,7 +48,32 @@
 | 痛苦荆棘 | Thorns of pain | 视觉元素 |
 | 铁链 | Iron chains | 视觉元素 |
 
-#### 设计表达
+#### 品牌系统术语（2026-05-06 新增）
+| 中文 | 英文 | 使用场景 |
+|------|------|----------|
+| 年度主题性视觉表达 | Annual thematic visual system / Annual thematic expressions | 品牌节奏提案 |
+| 年度主题性品牌表达系统 | Annual thematic brand expression system | 正式提案命名 |
+| 锚点 | The Anchor | 指代核心LOGO，强调不动 |
+| 弹性层 | The Flex Layer | 围绕核心LOGO的可变视觉层次 |
+| 年度表达 | The Annual Expression | 年度主题视觉处理 |
+| 可逆视觉层次 | Reversible visual layer | 强调可干净退役、不做永久改动 |
+| 季节性品牌层次 | Seasonal brand layers | 随季节/年度更替的视觉层 |
+| 核心标识 | Core mark / Master mark | 品牌核心锚点 |
+| 品牌资产 | Brand asset | 品牌管理/发行沟通语境 |
+| 创意支柱 | Creative pillar | 年度核心内容方向 |
+| 方向推动 | Directional push | 年度战略方向 |
+| 品牌刷新 | Brand refresh | 大规模品牌更新（需谨慎使用） |
+
+#### 触点与渠道术语
+| 中文 | 英文 | 使用场景 |
+|------|------|----------|
+| 加载画面 | Loading screens | 游戏内关键触点 |
+| 主视觉 | Key art | 营销/赛季核心视觉 |
+| 活动品牌 | Event branding | 活动视觉物料 |
+| 季节性触点 | Seasonal touchpoints | 品牌系统应用渠道 |
+| 视觉处理 | Visual treatment | 设计手法/风格处理 |
+
+
 | 中文 | 英文 | 专业度 |
 |------|------|--------|
 | 小小的变化 | Subtle refresh | ⭐⭐⭐ |
