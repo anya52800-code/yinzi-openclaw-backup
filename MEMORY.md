@@ -69,6 +69,8 @@
 
 ## 最近更新
 - 2026-05-08: **暴雪LOGO更新提案回复** — 建立年度主题性视觉系统（Annual Thematic Visual System）+ 弹性层（Flex Layer）方法论，成功回复暴雪三个核心问题，详见 `memory/2026-05-08.md`
+- 2026-05-08: **暴雪确认共识** — 美术+发行团队全票通过，方向一致。已发送概念探索邮件，试探设计边界，详见 `memory/2026-05-08.md`
+- 2026-05-08: **家中电脑恢复系统** — 建立一键恢复脚本 + 技能清单 + 飞书机器人配置指南，详见 `memory/2026-05-08.md`
 - 2026-05-06: **云盘备份恢复系统** — 建立OneDrive自动同步 + 家中电脑一键恢复脚本（`restore-from-onedrive.ps1`），详见 `memory/2026-05-06.md`
 - 2026-05-06: **游戏行业术语库扩充** — 新增品牌系统术语（Annual Thematic Expressions/锚点/弹性层等）+ 触点渠道术语（loading screens/key art/event branding），详见 `memory/work/design-comm.md`
 - 2026-04-30: **系统配置教训** — Key配置分散导致web_search 401；备份脚本语法错误23天未生成快照；均已修复
