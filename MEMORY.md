@@ -68,6 +68,7 @@
 **底线**: 这是基础维护工作，印子姐不提醒，我主动做。
 
 ## 最近更新
+- 2026-05-08: **暴雪LOGO更新提案回复** — 建立年度主题性视觉系统（Annual Thematic Visual System）+ 弹性层（Flex Layer）方法论，成功回复暴雪三个核心问题，详见 `memory/2026-05-08.md`
 - 2026-05-06: **云盘备份恢复系统** — 建立OneDrive自动同步 + 家中电脑一键恢复脚本（`restore-from-onedrive.ps1`），详见 `memory/2026-05-06.md`
 - 2026-05-06: **游戏行业术语库扩充** — 新增品牌系统术语（Annual Thematic Expressions/锚点/弹性层等）+ 触点渠道术语（loading screens/key art/event branding），详见 `memory/work/design-comm.md`
 - 2026-04-30: **系统配置教训** — Key配置分散导致web_search 401；备份脚本语法错误23天未生成快照；均已修复
@@ -101,6 +102,21 @@
 - **状态**: ✅ 正常
 - **provider**: kimi-k2.6
 - **配置路径**: `plugins.entries.moonshot.config.webSearch.apiKey`
+
+---
+
+## 云盘备份系统（2026-05-06建立）
+
+**备份脚本**: `upload-to-feishu.ps1`（已修复语法错误，正常运行）
+**恢复脚本**: `restore-from-onedrive.ps1`（家中电脑一键恢复）
+**存储位置**: OneDrive 自动同步
+
+**备份内容**:
+- 每日记忆文件 `memory/YYYY-MM-DD.md`
+- 暴雪邮件回复 `screenshots/blizzard_email_reply_*.md`
+- 长期记忆 `MEMORY.md`
+
+**备份频率**: 重要文件变更后立即备份
 
 ---
 _在此记录重要的决策、洞察、需要长期记住的事情_
