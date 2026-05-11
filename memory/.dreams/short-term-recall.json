@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-08T05:41:34.047Z",
+  "updatedAt": "2026-05-11T06:20:26.546Z",
   "entries": {
     "memory:memory/2026-04-01.md:74:106": {
       "key": "memory:memory/2026-04-01.md:74:106",
@@ -139,13 +139,13 @@
       "endLine": 44,
       "source": "memory",
       "snippet": "# 2026-03-16 - 周一 ## 今日事项 - [x] 配置每日新闻推送 cron 任务（10:30 AM） - [x] 创建 memory 目录用于日常记录 - [x] 修复周六未收到新闻推送的问题 ## 配置详情 - cron 任务: news-daily-1030 - 执行时间: 每天 10:30 AM - 推送渠道: 飞书 - 内容: 科技/游戏/美术/笑话 ## 问题根因 - cron 任务配置未完成，yaml 文件只是说明，未写入 jobs.json - memory 目录缺失 ## 解决方式 1. 创建 memory/ 目录 2. 将任务写入 ~/.openclaw/cron/jobs.json 3. 任务已启用 (enabled: true) ## 待验证 - 明天 10:30 检查是否正常推送 --- ## 下午会话记录 (14:00-15:00) ### 新增 Skills 检查 - 今日新增 10 个 skills，包括：agent-browser-clawdbot、article-writer、canvas-design-2、file-organizer-zh、self-improving-agent-3.0.4 等 ### DreamMaker 操作测试 - 成功登录 DreamMaker 2D 创作页面 - 修改分辨率：2K → 4K (4096×4096) - 修改比例：16:9 → 1:1 (正方形) - 触发重新生成任务（使用现有提示词） - **未找到** \"魔神36-碰撞图\" 模型（公开/个人/共享均搜索无果）",
-      "recallCount": 14,
+      "recallCount": 16,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 12.627533157009799,
+      "totalScore": 14.627533157009799,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-08T12:02:40.900Z",
-      "lastRecalledAt": "2026-05-08T04:21:04.051Z",
+      "lastRecalledAt": "2026-05-11T06:20:26.546Z",
       "queryHashes": [
         "23538990a453",
         "88abaa94bbd0",
@@ -160,14 +160,17 @@
         "227f2dbafbd0",
         "657660559d47",
         "c6dd89d2f6d9",
-        "304189fcab5e"
+        "304189fcab5e",
+        "3010f590c6aa",
+        "d5aa7768577a"
       ],
       "recallDays": [
         "2026-04-08",
         "2026-04-09",
         "2026-04-16",
         "2026-04-30",
-        "2026-05-08"
+        "2026-05-08",
+        "2026-05-11"
       ],
       "conceptTags": [
         "news-daily-1030",
@@ -461,23 +464,25 @@
       "endLine": 39,
       "source": "memory",
       "snippet": "# 2026-04-07 记忆 ## 今日概览 - **日期**: 2026年4月7日 星期二 - **状态**: ✅ 备份系统配置完成 ## 待办事项 - [x] 飞书云空间最终授权确认 - ✅ 完成 - [x] 核心文件上传 - ✅ 完成 - [x] 方案A时间戳版本化脚本更新 - ✅ 完成 - [ ] 完整上传演示 - 🔄 进行中 ## 进行中 - 三层备份架构部署 ## 已完成 - [x] 技能计数核查修正（46→51个） - [x] 24个5星技能索引更新 - [x] 记忆备份系统脚本创建 - `scripts/backup-daily.ps1` - Git每日备份 - `scripts/archive-weekly.ps1` - 周归档 - `scripts/backup-full.ps1` - 一键完整备份 - `scripts/sync-feishu.ps1` - 飞书同步准备 - `scripts/upload-to-feishu.ps1` - 手动上传辅助 - `scripts/setup-backup.bat` - 自动安装 - [x] 备份报告模板创建 - [x] 本地定时任务配置准备 - [x] 核心文件上传至飞书云空间 - [x] **🎉 Skills Hub 协同平台正式启动** - GitHub仓库: `anya52800-code/yinzi-skills-hub` - 团队架构确立: 小磊子(主管) + 大花(design) + 小强(tech待激活) - 首次Skill提交: `game-ui",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4,
+      "totalScore": 5,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-16T02:24:05.534Z",
-      "lastRecalledAt": "2026-04-30T10:03:25.878Z",
+      "lastRecalledAt": "2026-05-11T06:13:43.052Z",
       "queryHashes": [
         "67d91bf61014",
         "efb0975e4c90",
         "3dcf622733cc",
-        "4e5342f1a22b"
+        "4e5342f1a22b",
+        "3010f590c6aa"
       ],
       "recallDays": [
         "2026-04-16",
         "2026-04-20",
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-11"
       ],
       "conceptTags": [
         "backup",
@@ -832,20 +837,22 @@
       "endLine": 31,
       "source": "memory",
       "snippet": "# 2026-04-20 记忆日志 ## 待办 - [ ] ## 笔记 ## 想法/灵感 ## 重要事件 ## 17:33 补充记录 ### 重要事件 1. **Dashboard 端口混淆解决**: 18789 是 LobsterAI，18790 才是 OpenClaw Gateway。已更新收藏夹。 2. **备份脚本创建**: `scripts/openclaw-backup.ps1` 生成 34.8MB 备份包，上传至 OneDrive。 3. **Git 备份修复**: 补齐 4/8 以来 24 个未提交文件，当前提交 `1ac0783`。 4. **每日自动备份任务**: `OpenClaw-DailyBackup` 定时任务，每天 21:00 执行（Git + OneDrive）。 5. **DreamMaker 生成**: 术士地狱主题头像框 x4 张，nano-banana-pro 模型，1:1 比例。 6. **Claude Opus 4.7 发现**: 2026-04-17 发布，编码+13%，视觉分辨率提升。已更新 `memory/work/ai-frontier-2026.md`。 7. **信息滞后问题**: `web_search` API 401 不可用，改用 `multi-search-engine` + `web_fetch` 手动抓取。 ### 关键教训 - 用户提到前沿信息时，不要假设自己知道最新版本，先让用户确认。 - `web_search` 工具已坏，后续信息获取依赖 `web_fetch` + `multi-",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-30T06:45:47.286Z",
-      "lastRecalledAt": "2026-05-08T05:41:34.047Z",
+      "lastRecalledAt": "2026-05-11T06:20:26.546Z",
       "queryHashes": [
         "3dcf622733cc",
-        "bc5ef1b5e39c"
+        "bc5ef1b5e39c",
+        "d5aa7768577a"
       ],
       "recallDays": [
         "2026-04-30",
-        "2026-05-08"
+        "2026-05-08",
+        "2026-05-11"
       ],
       "conceptTags": [
         "backup",
@@ -1020,18 +1027,20 @@
       "endLine": 34,
       "source": "memory",
       "snippet": "# 2026-04-30 记忆日志 ## 今日待办 - [x] 回复暴雪邮件（Tijana） - [x] 排查 web_search 故障 - [x] 更换 Moonshot API key - [x] 修复飞书备份脚本 - [x] 归档今日记忆到长期记忆 ## 今日记录 ### 暴雪邮件回复（2封） - **邮件1**: 反馈收到已修改，请确认后做最终细化 - 文件: `screenshots/blizzard_reply_email_2026-04-30.md` - 关键表达: \"final polish and wrap it up\" - **邮件2**: 质疑 Q3 FY27 时间线（术士6月17日发布 vs 营销建议明年Q3） - 文件: `screenshots/blizzard_reply_time_check_2026-04-30.md` - 语气: 先肯定再提问，用 \"Could you help confirm\" 而非质疑 ### web_search 故障排查 - **问题**: web_search 报 401 Invalid Authentication - **根因**: `plugins.entries.moonshot.config.webSearch.apiKey` 配置项缺失/无效 - **关键发现**: - 聊天用的 key（`auth-profiles.json`）与搜索用的 key（`plugins.moonshot.config`）是两套独立配置 - 旧 key（`sk-kim…2LbB`）对搜索",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-08T05:41:34.047Z",
-      "lastRecalledAt": "2026-05-08T05:41:34.047Z",
+      "lastRecalledAt": "2026-05-11T06:20:26.546Z",
       "queryHashes": [
-        "bc5ef1b5e39c"
+        "bc5ef1b5e39c",
+        "d5aa7768577a"
       ],
       "recallDays": [
-        "2026-05-08"
+        "2026-05-08",
+        "2026-05-11"
       ],
       "conceptTags": [
         "备份",
@@ -1042,6 +1051,37 @@
         "sk-kim",
         "记忆",
         "日志"
+      ]
+    },
+    "memory:memory/2026-04-30.md:28:56": {
+      "key": "memory:memory/2026-04-30.md:28:56",
+      "path": "memory/2026-04-30.md",
+      "startLine": 28,
+      "endLine": 56,
+      "source": "memory",
+      "snippet": "- **修复**: 更新 `openclaw.json` → `plugins.entries.moonshot.config.webSearch.apiKey`，重启 gateway - **结果**: web_search 恢复正常，provider: kimi-k2.6 ### 技能检查 - 总技能: 114 - 就绪: 67（核心5星全部正常） - 缺失依赖: 47（macOS独占/外部工具未装/API未配） - ⚠️ 2个软链接警告: d2-diagram-creator, mermaid-diagrams（不影响使用） ### 飞书备份脚本修复 - **问题**: `upload-to-feishu.ps1` 第51行多余 `}`，定时任务23天静默失败 - **影响**: 2026-04-07 至今从未生成过快照文件 - **修复**: 重写脚本，已验证正常生成快照（46.48 KB） ## 灵感/想法 - 配置分散是坑：聊天、搜索、不同插件各自存 key，容易遗漏 - 以后换 key 要检查所有配置路径：auth-profiles.json + plugins.config + models.json + 环境变量 - 定时任务需要定期检查是否真的生效（不能只看\"运行了\"） ## 明日计划（节后） - [ ] 配置飞书云空间自动上传（需要分享文件夹给 Bot） - [ ] 整合本周记忆到 MEMORY.md - [ ] 确认暴雪邮件回复状态 ## 产出文件 - `screenshots/blizzard_reply_email_2026-04-30.m",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-11T06:13:43.052Z",
+      "lastRecalledAt": "2026-05-11T06:13:43.052Z",
+      "queryHashes": [
+        "3010f590c6aa"
+      ],
+      "recallDays": [
+        "2026-05-11"
+      ],
+      "conceptTags": [
+        "gateway",
+        "备份",
+        "openclaw.json",
+        "web-search",
+        "kimi-k2.6",
+        "macos独占/外部工具未装/api未配",
+        "d2-diagram-creator",
+        "mermaid-diagrams"
       ]
     }
   }
