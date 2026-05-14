@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-12T02:19:35.936Z",
+  "updatedAt": "2026-05-14T10:18:21.275Z",
   "entries": {
     "memory:memory/2026-04-01.md:74:106": {
       "key": "memory:memory/2026-04-01.md:74:106",
@@ -73,22 +73,24 @@
       "endLine": 47,
       "source": "memory",
       "snippet": "--- ## 新闻推送偏好设置（2026-04-01 更新） ### 推送时间 - **每日上午**: 11:00 ### 内容板块 | 板块 | 状态 | 说明 | |------|:----:|------| | 科技 | ✅ 保留 | AI、硬件、行业动态 | | 经济形势 | ✅ 新增 | 取代原娱乐板块，含市场、政策、产业动态 | | 游戏 | ✅ 保留 | 游戏发布、设备、行业 | | 图书推荐 | ✅ 调整 | 中文书籍为主，类别：艺术、个人成长、小说、人物传记 | | 娱乐 | ❌ 移除 | 替换为经济形势 | | 健康 | ❌ 移除 | 视情况偶尔补充 | ### 内容风格 - **形式**: 简讯（一句话摘要） - **深度**: 浅度，提供链接供深入了解 - **排版**: 图文并茂，每个板块配1张配图 - **语言**: 中文为主，外文媒体内容中文概括 ### 图书推荐类别 1. 🎨 艺术 2. 🌱 个人成长 3. 📖 小说 4. 👤 人物传记 ### 信息源偏好 - 科技: The Verge、TechCrunch、36氪 - 经济: Bloomberg、Financial Times、财新 - 游戏: Variety、游戏葡萄 - 图书: 豆瓣年度榜单、Goodreads、京东/当当畅销榜 --- ## 中文图书来源详细清单 ### 1. 豆瓣读书（主要来源） - **地址**: https://book.douban.com - **推荐榜单**: - 豆瓣年度读书榜单（每年12月发布） - 一周热门图书榜",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.713514070228984,
+      "totalScore": 3.713514070228984,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-08T11:55:27.128Z",
-      "lastRecalledAt": "2026-05-08T04:18:53.257Z",
+      "lastRecalledAt": "2026-05-14T07:05:33.003Z",
       "queryHashes": [
         "49c26bfa1e51",
         "294db2bcd5cf",
-        "657660559d47"
+        "657660559d47",
+        "4042d816590e"
       ],
       "recallDays": [
         "2026-04-08",
         "2026-04-20",
-        "2026-05-08"
+        "2026-05-08",
+        "2026-05-14"
       ],
       "conceptTags": [
         "京东/当当畅销榜",
@@ -139,13 +141,13 @@
       "endLine": 44,
       "source": "memory",
       "snippet": "# 2026-03-16 - 周一 ## 今日事项 - [x] 配置每日新闻推送 cron 任务（10:30 AM） - [x] 创建 memory 目录用于日常记录 - [x] 修复周六未收到新闻推送的问题 ## 配置详情 - cron 任务: news-daily-1030 - 执行时间: 每天 10:30 AM - 推送渠道: 飞书 - 内容: 科技/游戏/美术/笑话 ## 问题根因 - cron 任务配置未完成，yaml 文件只是说明，未写入 jobs.json - memory 目录缺失 ## 解决方式 1. 创建 memory/ 目录 2. 将任务写入 ~/.openclaw/cron/jobs.json 3. 任务已启用 (enabled: true) ## 待验证 - 明天 10:30 检查是否正常推送 --- ## 下午会话记录 (14:00-15:00) ### 新增 Skills 检查 - 今日新增 10 个 skills，包括：agent-browser-clawdbot、article-writer、canvas-design-2、file-organizer-zh、self-improving-agent-3.0.4 等 ### DreamMaker 操作测试 - 成功登录 DreamMaker 2D 创作页面 - 修改分辨率：2K → 4K (4096×4096) - 修改比例：16:9 → 1:1 (正方形) - 触发重新生成任务（使用现有提示词） - **未找到** \"魔神36-碰撞图\" 模型（公开/个人/共享均搜索无果）",
-      "recallCount": 16,
+      "recallCount": 22,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 14.627533157009799,
+      "totalScore": 20.6275331570098,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-08T12:02:40.900Z",
-      "lastRecalledAt": "2026-05-11T06:20:26.546Z",
+      "lastRecalledAt": "2026-05-14T07:06:08.346Z",
       "queryHashes": [
         "23538990a453",
         "88abaa94bbd0",
@@ -162,7 +164,13 @@
         "c6dd89d2f6d9",
         "304189fcab5e",
         "3010f590c6aa",
-        "d5aa7768577a"
+        "d5aa7768577a",
+        "83e98b513e69",
+        "cd7aaf628aa8",
+        "dd34e1987aa4",
+        "84e116b3c4b4",
+        "4042d816590e",
+        "20f496ba1c27"
       ],
       "recallDays": [
         "2026-04-08",
@@ -170,7 +178,8 @@
         "2026-04-16",
         "2026-04-30",
         "2026-05-08",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-14"
       ],
       "conceptTags": [
         "news-daily-1030",
@@ -221,22 +230,24 @@
       "endLine": 80,
       "source": "memory",
       "snippet": "### 3. 星级优先级体系建立 ✅ **决策**: 五星制优先级调用 - **21个5星技能**：核心技能，自动优先调用 - **17个4星技能**：重要技能，场景匹配推荐 - **8个3星及以下**：辅助技能，按需使用 ### 4. 代码质量门禁 ✅ **决策**: 90分通过线 - 建立 code-validator 技能 - 语法检查 + 常见Bug检测 + 安全扫描 - 集成到AGENTS.md工作流 - **交付标准**: ≥90分才交付 --- ## 具体事件记录 ### 上午-下午 - [x] 涨薪回复建议归档（career.md） - [x] 技能冗余删除（tavily-search等5个） - [x] 9个补短技能安装 - [x] 技能索引更新（43→46个） - [x] 星级优先级文件创建 ### 下午-晚上 - [x] 创作前期分析技能补充（3个） - [x] 代码验证技能创建 - [x] 质量门禁90分设定 - [x] AGENTS.md工作流更新 - [x] 记忆分区自检 --- ## 关键洞察 ### 技能体系设计原则 1. **短板补齐**: 优先补充高频刚需（图片编辑、数据库、SSH） 2. **创作闭环**: 建立\"趋势→竞品→调研→策略→执行\"工作流 3. **质量优先**: 代码生成必须自检，90分门禁 4. **星级调用**: 5星技能自动优先，保障效率与质量 ### 边界确认 - ✅ 能直接做：生成代码/设计、写脚本、分析数据",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.7280402935273944,
+      "totalScore": 3.7280402935273944,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-08T12:02:40.900Z",
-      "lastRecalledAt": "2026-05-08T04:18:53.257Z",
+      "lastRecalledAt": "2026-05-14T07:05:33.003Z",
       "queryHashes": [
         "23538990a453",
         "3dcf622733cc",
-        "657660559d47"
+        "657660559d47",
+        "4042d816590e"
       ],
       "recallDays": [
         "2026-04-08",
         "2026-04-30",
-        "2026-05-08"
+        "2026-05-08",
+        "2026-05-14"
       ],
       "conceptTags": [
         "code-validator",
@@ -324,24 +335,28 @@
       "endLine": 62,
       "source": "memory",
       "snippet": "- **未找到** \"魔神36-碰撞图\" 模型（公开/个人/共享均搜索无果） ### screenshots 文件夹 - 用户创建 workspace/screenshots/ 用于图片交换 - 成功读取 gui_img_map149.png： - 类型：游戏地图/区域地块素材 - 风格：极简扁平化 + 手绘不规则边缘 - 主色调：灰褐色/大地色 (#999080) - 背景：透明 PNG - 用途：大战略/4X 游戏省份地块 ### Pinterest 搜索 - 登录用户 Pinterest 账号 (anya52800) - 搜索 \"Diablo logo\" 找到 10+ 参考图 - 截图保存至 screenshots/pinterest_diablo_logo.jpg ### 飞书图片传输问题 - 飞书直接发图无法接收（可能是格式/权限限制） - **解决方案**：用户将图片放入 screenshots 文件夹，我直接读取 ### 技术限制记录 - 无法直接操作用户本地软件（Photoshop/DreamMaker 客户端） - 网易内部系统（DreamMaker/MUSE）需员工账号登录，我无法绕过 SSO - 浏览器控制仅对 Web 版有效",
-      "recallCount": 6,
+      "recallCount": 9,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5.043110922871379,
+      "totalScore": 8.043110922871378,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-09T03:11:02.585Z",
-      "lastRecalledAt": "2026-04-20T06:55:23.659Z",
+      "lastRecalledAt": "2026-05-14T03:24:10.310Z",
       "queryHashes": [
         "88abaa94bbd0",
         "06698e17c9cf",
         "6bc396786eb6",
         "605a31d58760",
         "294db2bcd5cf",
-        "05cd2e1c13b0"
+        "05cd2e1c13b0",
+        "83e98b513e69",
+        "cd7aaf628aa8",
+        "84e116b3c4b4"
       ],
       "recallDays": [
         "2026-04-09",
-        "2026-04-20"
+        "2026-04-20",
+        "2026-05-14"
       ],
       "conceptTags": [
         "魔神36-碰撞图",
@@ -533,18 +548,20 @@
       "endLine": 17,
       "source": "memory",
       "snippet": "### 19:23 - 创建 DreamMaker 自动化技能 - **技能名称**：dreammaker-automation - **位置**：`~/.openclaw/workspace/skills/dreammaker-automation/` - **包含文件**： - `SKILL.md` - 完整操作指南（参数设置、提示词模板、常见问题） - `scripts/dreammaker_helper.py` - 辅助脚本（提示词生成器、预设配置） - **功能**：自动打开DreamMaker、设置参数、上传参考图、填入提示词、触发生成 - **支持模型**：nano-banana-pro / 即梦图片4.5 - **支持分辨率**：1K/2K/4K - **支持比例**：1:1 / 4:3 / 16:9 / 21:9 - **创建时间**：2026-04-09 19:23 --- _自动追加于 19:24_",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-20T06:55:23.659Z",
-      "lastRecalledAt": "2026-04-20T06:55:23.659Z",
+      "lastRecalledAt": "2026-05-14T03:23:52.316Z",
       "queryHashes": [
-        "05cd2e1c13b0"
+        "05cd2e1c13b0",
+        "cd7aaf628aa8"
       ],
       "recallDays": [
-        "2026-04-20"
+        "2026-04-20",
+        "2026-05-14"
       ],
       "conceptTags": [
         "dreammaker-automation",
@@ -564,20 +581,22 @@
       "endLine": 13,
       "source": "memory",
       "snippet": "# 2026-04-10 记忆 ## 上午 ### 11:01 - 唤醒 - 检查记忆系统状态 - 创建当日记忆文件 ### 13:58 - 每日记忆系统维护 - 检查当日记忆文件状态：已存在 - 回顾昨日待办：DreamMaker 自动化技能创建完成 ✓ - 系统状态：正常",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-20T06:55:23.659Z",
-      "lastRecalledAt": "2026-04-30T06:45:47.286Z",
+      "lastRecalledAt": "2026-05-14T03:23:52.316Z",
       "queryHashes": [
         "05cd2e1c13b0",
-        "3dcf622733cc"
+        "3dcf622733cc",
+        "cd7aaf628aa8"
       ],
       "recallDays": [
         "2026-04-20",
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-14"
       ],
       "conceptTags": [
         "记忆",
@@ -714,18 +733,20 @@
       "endLine": 47,
       "source": "memory",
       "snippet": "# 2026-04-08 记忆 ## 今日概览 - **日期**: 2026年4月8日 星期三 - **状态**: 🌅 新的一天 ## 待办事项 - [ ] 完整上传演示（昨日遗留） - [ ] 检查 Skills Hub 状态 ## 进行中 - 三层备份架构部署 ## 已完成 - [x] 记忆系统维护 - 自动检查 - [x] 职场降本预算方案梳理 - [x] G67/G83项目预算分配计算 - [x] 分阶段AI降本方案设计 ## 系统更新 ### 备份时间调整 - **时间**: 2026-04-08 20:04 - **变更**: 备份任务时间统一调整为 19:00 - 每日Git备份: 21:00 → **19:00** - 每周五归档: 21:30 → **19:00** - **原因**: 与主人此前设定的19:00一致 - **状态**: ✅ 记忆文件已更新，定时任务待配置 ## 工作记录 ### 外包成本降本方案（重要） **背景**：26年领导要求外包成本降本50%，固定成本13万/月，需从156万降至87万 **核心矛盾**：固定成本13万×12月=156万，已超标 **分阶段降本路径**： | 阶段 | 时间 | 月均成本 | 当季节省 | |------|------|----------|----------| | Q1启动 | 1-3月 | 12万 | 15万 | | Q2加速 | 4-6月 | 9.5万 | 20万 | | Q3攻坚 | 7-9月 | 7.5万 | 22万 | | Q4收尾 | 10-12月 | 7.",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-30T06:45:47.286Z",
-      "lastRecalledAt": "2026-04-30T06:45:47.286Z",
+      "lastRecalledAt": "2026-05-14T07:22:32.717Z",
       "queryHashes": [
-        "3dcf622733cc"
+        "3dcf622733cc",
+        "71f79dcc2280"
       ],
       "recallDays": [
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-14"
       ],
       "conceptTags": [
         "备份",
@@ -840,22 +861,26 @@
       "endLine": 31,
       "source": "memory",
       "snippet": "# 2026-04-20 记忆日志 ## 待办 - [ ] ## 笔记 ## 想法/灵感 ## 重要事件 ## 17:33 补充记录 ### 重要事件 1. **Dashboard 端口混淆解决**: 18789 是 LobsterAI，18790 才是 OpenClaw Gateway。已更新收藏夹。 2. **备份脚本创建**: `scripts/openclaw-backup.ps1` 生成 34.8MB 备份包，上传至 OneDrive。 3. **Git 备份修复**: 补齐 4/8 以来 24 个未提交文件，当前提交 `1ac0783`。 4. **每日自动备份任务**: `OpenClaw-DailyBackup` 定时任务，每天 21:00 执行（Git + OneDrive）。 5. **DreamMaker 生成**: 术士地狱主题头像框 x4 张，nano-banana-pro 模型，1:1 比例。 6. **Claude Opus 4.7 发现**: 2026-04-17 发布，编码+13%，视觉分辨率提升。已更新 `memory/work/ai-frontier-2026.md`。 7. **信息滞后问题**: `web_search` API 401 不可用，改用 `multi-search-engine` + `web_fetch` 手动抓取。 ### 关键教训 - 用户提到前沿信息时，不要假设自己知道最新版本，先让用户确认。 - `web_search` 工具已坏，后续信息获取依赖 `web_fetch` + `multi-",
-      "recallCount": 3,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3,
+      "totalScore": 6,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-30T06:45:47.286Z",
-      "lastRecalledAt": "2026-05-11T06:20:26.546Z",
+      "lastRecalledAt": "2026-05-14T03:24:10.310Z",
       "queryHashes": [
         "3dcf622733cc",
         "bc5ef1b5e39c",
-        "d5aa7768577a"
+        "d5aa7768577a",
+        "83e98b513e69",
+        "dd34e1987aa4",
+        "84e116b3c4b4"
       ],
       "recallDays": [
         "2026-04-30",
         "2026-05-08",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-14"
       ],
       "conceptTags": [
         "backup",
@@ -1123,6 +1148,198 @@
         "restore-from-onedrive.ps1",
         "scripts/backup-daily.ps1",
         "scripts/openclaw-backup.ps1"
+      ]
+    },
+    "memory:memory/2026-05-06.md:1:41": {
+      "key": "memory:memory/2026-05-06.md:1:41",
+      "path": "memory/2026-05-06.md",
+      "startLine": 1,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "# 2026-05-06 每日记录 ## 会话启动 - **时间**: 11:11 GMT+8 - **触发**: 印子姐\"唤醒一下\" - **状态**: 系统启动完成，记忆就绪 ## 完成事项 - ✅ 解析暴雪邮件背后的意思（礼貌拒绝，暗示2027再议） - ✅ 撰写回复邮件（中英对照，强调共识，柔和推进年度主题系统） - ✅ 扩充游戏行业术语库（品牌系统术语 + 触点渠道术语） - ✅ 设计云盘备份恢复方案（OneDrive自动同步 + 家中电脑一键恢复） ## 云盘备份方案（2026-05-06 建立） ### 自动备份（每日21:00） - **源**: `C:\\Users\\jxguo\\.openclaw\\workspace` - **目标**: `OneDrive\\OpenClaw-Backup\\` - **内容**: - 核心文件: MEMORY.md, AGENTS.md, SOUL.md, IDENTITY.md, USER.md, HEARTBEAT.md, TOOLS.md - 记忆分区: memory/work/, memory/life/, memory/YYYY-MM-DD.md - 脚本: scripts/*.ps1 - 完整恢复包: openclaw-restore-YYYY-MM-DD.zip（一键恢复用） - **Git**: 本地提交变更历史 ### 家中电脑恢复流程 ```powershell # 1. 安装 OpenClaw（如果还没装） npm install -g openclaw # 2. 确保 OneD",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-14T03:23:42.238Z",
+      "lastRecalledAt": "2026-05-14T03:24:10.310Z",
+      "queryHashes": [
+        "83e98b513e69",
+        "dd34e1987aa4",
+        "84e116b3c4b4"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "backup",
+        "备份",
+        "openclaw-backup",
+        "memory.md",
+        "agents.md",
+        "soul.md",
+        "identity.md",
+        "user.md"
+      ]
+    },
+    "memory:memory/2026-05-08.md:31:71": {
+      "key": "memory:memory/2026-05-08.md:31:71",
+      "path": "memory/2026-05-08.md",
+      "startLine": 31,
+      "endLine": 71,
+      "source": "memory",
+      "snippet": "**暴雪回复**: 美术+发行团队全票通过 - \"we're all aligned on the direction and expectations\" → 方向一致 - \"publishing team... okay with this as long as we're not changing the logo itself\" → 只要LOGO不动就行 **我方回复策略**: 试探边界，保留设计空间 - 不提\"弹性层/锚点\"等术语，避免自我设限 - 确认第一版视觉处理绑定2026年6月17日术士职业上线 - 索要参考示例，试探对方容忍度 **文件位置**: `screenshots/blizzard_email_concept_v3_2026-05-08.md` **状态**: 已发送，等待回复 --- ## 家中电脑恢复系统 **建立时间**: 2026-05-08 **文件清单**: - `restore-agent.ps1` — 一键恢复脚本 - `agent-backup.ps1` — 自动备份脚本 - `screenshots/feishu-bot-setup-guide.md` — 飞书第二个机器人申请指南 - `screenshots/skills-inventory.md` — 51个技能完整清单 **功能**: - 记忆文件自动备份到 OneDrive/OpenClaw-Backup - 家中电脑一键恢复（含核心技能自动安装选项） - 定时备份：每天18:00执行 **状态**: ✅ 已建立并测试 --- ## 今日工作 - [x",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-14T03:23:42.238Z",
+      "lastRecalledAt": "2026-05-14T03:24:10.310Z",
+      "queryHashes": [
+        "83e98b513e69",
+        "dd34e1987aa4",
+        "84e116b3c4b4"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "backup",
+        "备份",
+        "弹性层/锚点",
+        "restore-agent.ps1",
+        "agent-backup.ps1",
+        "screenshots/skills-inventory.md",
+        "onedrive/openclaw-backup",
+        "回复"
+      ]
+    },
+    "memory:memory/2026-05-08.md:1:35": {
+      "key": "memory:memory/2026-05-08.md:1:35",
+      "path": "memory/2026-05-08.md",
+      "startLine": 1,
+      "endLine": 35,
+      "source": "memory",
+      "snippet": "# 2026-05-08 工作记录 ## 暴雪邮件回复（LOGO更新提案） **背景**: 暴雪对LOGO更新提案提出三个问题，需要回复说明未来更新方向 **回复要点**: 1. **未来更新**: 年度主题性视觉表达系统，随资料片每年更新一次 2. **重大节点**: 季节性品牌层次，轻量可逆的活动品牌/加载画面变化 3. **LOGO适配**: 核心标识不动，弹性层处理背景花纹/图腾/色彩 4. **关键承诺**: LOGO文字不变，仅上下与两边装饰花纹有轻微设计处理，纯粹氛围感，不强行改设计 **术语使用**: - Annual thematic visual system（年度主题性视觉表达系统） - Creative pillar（创意支柱） - Seasonal brand layers（季节性品牌层次） - Reversible visual layer（可逆视觉层次） - Core mark（核心标识） - Flex layer（弹性层） - The Anchor（锚点） - Atmospheric storytelling（氛围叙事） **文件位置**: `screenshots/blizzard_email_reply_2026-05-08_v2.md` **状态**: 已发送 --- ## 暴雪确认共识（2026-05-08 下午） **暴雪回复**: 美术+发行团队全票通过 - \"we're all aligned on the direction and expectations\" → 方向一致 - \"publishing team.",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-14T03:23:42.238Z",
+      "lastRecalledAt": "2026-05-14T03:24:10.310Z",
+      "queryHashes": [
+        "83e98b513e69",
+        "dd34e1987aa4",
+        "84e116b3c4b4"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "轻量可逆的活动品牌/加载画面变化",
+        "弹性层处理背景花纹/图腾/色彩",
+        "工作",
+        "记录",
+        "邮件",
+        "回复",
+        "logo",
+        "更新"
+      ]
+    },
+    "memory:memory/2026-05-13.md:1:38": {
+      "key": "memory:memory/2026-05-13.md:1:38",
+      "path": "memory/2026-05-13.md",
+      "startLine": 1,
+      "endLine": 38,
+      "source": "memory",
+      "snippet": "# 2026-05-13 记忆 ## 品牌授权谈判 — 朴茶别院 ### 背景 朋友想用\"朴茶别院\"做店铺招牌，原本只是茶叶茶具寄售合作。 ### 谈判过程 - 对方目的：蹭品牌流量和信任背书，省营销成本 - 我方立场：商标未注册，无法律保护，风险太大 - **结果**：对方同意自己起名，纯寄售模式继续 ### 产出文件 - `screenshots/寄售协议模板_朴茶别院.md` — 简易寄售协议模板 ### 关键决策 - ✅ 守住品牌边界，不授权招牌使用 - ✅ 寄售规则落纸面（货品清单、结算、损耗、退货） - ✅ 对方自行注册品牌，我方提供茶叶茶具供货 --- ## 商标查询 — 朴茶别院及备选 ### 查询结果 | 商标名 | 注册状态 | 备注 | |--------|---------|------| | 朴茶别院 | ❌ 大陆未注册，✅ 香港已注册(2022) | 无法在大陆注册 | | 璞茶别院 | ✅ 未注册 | 音近但字不同 | | 朴茶山房 | ✅ 未注册 | **推荐**，保留\"朴茶\"核心 | | 璞茶山房 | ✅ 未注册 | 茶山通用词风险 | | 朴茶斋 | ✅ 未注册 | 传统味，显著性一般 | | 朴茶小筑 | 未查到 | \"小筑\"较常见 | ### 推荐排序 1. **朴茶山房** — 保留品牌资产，注册干净，意境最佳 2. **朴庐** — 极简，注册成功率最高",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-14T03:24:10.310Z",
+      "lastRecalledAt": "2026-05-14T03:24:10.310Z",
+      "queryHashes": [
+        "84e116b3c4b4"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "screenshots/寄售协议模板-朴茶别院.md",
+        "记忆",
+        "品牌",
+        "授权",
+        "谈判",
+        "背景",
+        "朋友",
+        "想用"
+      ]
+    },
+    "memory:memory/2026-04-08.md:39:64": {
+      "key": "memory:memory/2026-04-08.md:39:64",
+      "path": "memory/2026-04-08.md",
+      "startLine": 39,
+      "endLine": 64,
+      "source": "memory",
+      "snippet": "|------|------|----------|----------| | Q1启动 | 1-3月 | 12万 | 15万 | | Q2加速 | 4-6月 | 9.5万 | 20万 | | Q3攻坚 | 7-9月 | 7.5万 | 22万 | | Q4收尾 | 10-12月 | 7.25万 | 12万 | | **全年** | - | **6.76万** | **69万** | **AI降本四大方向**： 1. 文案/内容自动化（省2-3万/月） 2. 基础设计AI化（省1.5-2万/月） 3. 前端开发AI辅助（省2-3万/月） 4. 测试/数据处理自动化（省1.5-2.5万/月） **四个管线降本分配（48%目标）**： - 开发：30万 | 设计：18.75万 | 内容：15万 | 运营：11.25万 ### 项目预算分配 - 110万外包费按预算比例分配 - G67（950万预算）：**51.9万** - G83（1064万预算）：**58.1万** ## 笔记/想法 --- *更新于: 2026-04-08 18:52*",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-14T07:22:32.717Z",
+      "lastRecalledAt": "2026-05-14T07:22:32.717Z",
+      "queryHashes": [
+        "71f79dcc2280"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "1-3月",
+        "4-6月",
+        "9.5万",
+        "7-9月",
+        "7.5万",
+        "10-12月",
+        "7.25万",
+        "6.76万"
+      ]
+    },
+    "memory:memory/2026-05-11.md:1:32": {
+      "key": "memory:memory/2026-05-11.md:1:32",
+      "path": "memory/2026-05-11.md",
+      "startLine": 1,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "# 2026-05-11 记忆 ## 时间线 - 13:42 - 会话启动，执行每日固定检查 - 13:45 - ✅ 记忆系统检查完成 - 13:45 - ✅ 技能系统检查完成（73个技能→72个，删除误放的chaquopy） - 13:45 - ✅ 工作区核心文件全部正常 - 13:45 - ✅ 昨日记忆回顾完成（暴雪邮件/家中电脑恢复系统） - 13:47 - ✅ 清理非技能目录 `chaquopy`（Android Python 运行环境，误放入skills） - 13:50 - 🔴 发现备份系统严重遗漏 - 13:54 - ✅ 重写完整备份脚本 `full-backup.ps1` - 13:54 - ✅ 重写恢复脚本 `restore-agent.ps1` - 13:54 - ✅ 首次完整备份成功：317个文件（含28个技能） - 14:06 - 🔴 发现 OneDrive 不适合跨电脑恢复（不同微软账号） - 14:11 - ✅ 改用 GitHub 备份方案 - 14:50 - ✅ 创建 GitHub 仓库 `anya52800-code/yinzi-openclaw-backup` - 14:51 - ✅ 首次 GitHub 推送成功（master分支） - 14:51 - ✅ 生成自动备份脚本 `github-auto-backup.ps1` - 15:00 - ✅ 创建定时任务 `OpenClaw-GitHub-Backup`（每天21:00自动推送） ## 待办事项 - [ ] ## 重要事件 - ## 技能使用记录 - ## 备注 -",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-14T10:18:21.275Z",
+      "lastRecalledAt": "2026-05-14T10:18:21.275Z",
+      "queryHashes": [
+        "71392dd5f06c"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "backup",
+        "备份",
+        "暴雪邮件/家中电脑恢复系统",
+        "full-backup.ps1",
+        "restore-agent.ps1",
+        "github-auto-backup.ps1",
+        "openclaw-github-backup",
+        "记忆"
       ]
     }
   }

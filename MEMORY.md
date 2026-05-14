@@ -108,7 +108,7 @@
 
 ---
 
-## 云盘备份系统（2026-05-06建立）
+## 备份系统（2026-05-06建立，2026-05-14更新GitHub备份）
 
 **备份脚本**: `upload-to-feishu.ps1`（已修复语法错误，正常运行）
 **恢复脚本**: `restore-from-onedrive.ps1`（家中电脑一键恢复）
@@ -118,8 +118,14 @@
 - 每日记忆文件 `memory/YYYY-MM-DD.md`
 - 暴雪邮件回复 `screenshots/blizzard_email_reply_*.md`
 - 长期记忆 `MEMORY.md`
+- **GitHub 全量备份**（2026-05-14新增）：所有代码仓库、Issues、PRs、Wiki
 
 **备份频率**: 重要文件变更后立即备份
+
+**GitHub备份说明**:
+- GitHub仓库需纳入全量备份范围
+- 与记忆文件、工作文档同等重要
+- 备份方式：Git clone + 定期同步 或 GitHub API导出
 
 ---
 _在此记录重要的决策、洞察、需要长期记住的事情_
