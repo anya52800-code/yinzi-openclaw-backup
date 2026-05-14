@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-14T10:18:21.275Z",
+  "updatedAt": "2026-05-14T12:41:19.703Z",
   "entries": {
     "memory:memory/2026-04-01.md:74:106": {
       "key": "memory:memory/2026-04-01.md:74:106",
@@ -733,16 +733,17 @@
       "endLine": 47,
       "source": "memory",
       "snippet": "# 2026-04-08 记忆 ## 今日概览 - **日期**: 2026年4月8日 星期三 - **状态**: 🌅 新的一天 ## 待办事项 - [ ] 完整上传演示（昨日遗留） - [ ] 检查 Skills Hub 状态 ## 进行中 - 三层备份架构部署 ## 已完成 - [x] 记忆系统维护 - 自动检查 - [x] 职场降本预算方案梳理 - [x] G67/G83项目预算分配计算 - [x] 分阶段AI降本方案设计 ## 系统更新 ### 备份时间调整 - **时间**: 2026-04-08 20:04 - **变更**: 备份任务时间统一调整为 19:00 - 每日Git备份: 21:00 → **19:00** - 每周五归档: 21:30 → **19:00** - **原因**: 与主人此前设定的19:00一致 - **状态**: ✅ 记忆文件已更新，定时任务待配置 ## 工作记录 ### 外包成本降本方案（重要） **背景**：26年领导要求外包成本降本50%，固定成本13万/月，需从156万降至87万 **核心矛盾**：固定成本13万×12月=156万，已超标 **分阶段降本路径**： | 阶段 | 时间 | 月均成本 | 当季节省 | |------|------|----------|----------| | Q1启动 | 1-3月 | 12万 | 15万 | | Q2加速 | 4-6月 | 9.5万 | 20万 | | Q3攻坚 | 7-9月 | 7.5万 | 22万 | | Q4收尾 | 10-12月 | 7.",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-30T06:45:47.286Z",
-      "lastRecalledAt": "2026-05-14T07:22:32.717Z",
+      "lastRecalledAt": "2026-05-14T12:41:06.426Z",
       "queryHashes": [
         "3dcf622733cc",
-        "71f79dcc2280"
+        "71f79dcc2280",
+        "7da151f13384"
       ],
       "recallDays": [
         "2026-04-30",
@@ -1055,23 +1056,25 @@
       "endLine": 34,
       "source": "memory",
       "snippet": "# 2026-04-30 记忆日志 ## 今日待办 - [x] 回复暴雪邮件（Tijana） - [x] 排查 web_search 故障 - [x] 更换 Moonshot API key - [x] 修复飞书备份脚本 - [x] 归档今日记忆到长期记忆 ## 今日记录 ### 暴雪邮件回复（2封） - **邮件1**: 反馈收到已修改，请确认后做最终细化 - 文件: `screenshots/blizzard_reply_email_2026-04-30.md` - 关键表达: \"final polish and wrap it up\" - **邮件2**: 质疑 Q3 FY27 时间线（术士6月17日发布 vs 营销建议明年Q3） - 文件: `screenshots/blizzard_reply_time_check_2026-04-30.md` - 语气: 先肯定再提问，用 \"Could you help confirm\" 而非质疑 ### web_search 故障排查 - **问题**: web_search 报 401 Invalid Authentication - **根因**: `plugins.entries.moonshot.config.webSearch.apiKey` 配置项缺失/无效 - **关键发现**: - 聊天用的 key（`auth-profiles.json`）与搜索用的 key（`plugins.moonshot.config`）是两套独立配置 - 旧 key（`sk-kim…2LbB`）对搜索",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4,
+      "totalScore": 5,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-08T05:41:34.047Z",
-      "lastRecalledAt": "2026-05-12T02:19:35.936Z",
+      "lastRecalledAt": "2026-05-14T12:41:19.703Z",
       "queryHashes": [
         "bc5ef1b5e39c",
         "d5aa7768577a",
         "d236a9312dcf",
-        "c83ca33a7d2e"
+        "c83ca33a7d2e",
+        "b529fe8d4717"
       ],
       "recallDays": [
         "2026-05-08",
         "2026-05-11",
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-14"
       ],
       "conceptTags": [
         "备份",
@@ -1287,15 +1290,16 @@
       "endLine": 64,
       "source": "memory",
       "snippet": "|------|------|----------|----------| | Q1启动 | 1-3月 | 12万 | 15万 | | Q2加速 | 4-6月 | 9.5万 | 20万 | | Q3攻坚 | 7-9月 | 7.5万 | 22万 | | Q4收尾 | 10-12月 | 7.25万 | 12万 | | **全年** | - | **6.76万** | **69万** | **AI降本四大方向**： 1. 文案/内容自动化（省2-3万/月） 2. 基础设计AI化（省1.5-2万/月） 3. 前端开发AI辅助（省2-3万/月） 4. 测试/数据处理自动化（省1.5-2.5万/月） **四个管线降本分配（48%目标）**： - 开发：30万 | 设计：18.75万 | 内容：15万 | 运营：11.25万 ### 项目预算分配 - 110万外包费按预算比例分配 - G67（950万预算）：**51.9万** - G83（1064万预算）：**58.1万** ## 笔记/想法 --- *更新于: 2026-04-08 18:52*",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-14T07:22:32.717Z",
-      "lastRecalledAt": "2026-05-14T07:22:32.717Z",
+      "lastRecalledAt": "2026-05-14T12:41:06.426Z",
       "queryHashes": [
-        "71f79dcc2280"
+        "71f79dcc2280",
+        "7da151f13384"
       ],
       "recallDays": [
         "2026-05-14"
@@ -1340,6 +1344,38 @@
         "github-auto-backup.ps1",
         "openclaw-github-backup",
         "记忆"
+      ]
+    },
+    "memory:memory/2026-05-12.md:1:39": {
+      "key": "memory:memory/2026-05-12.md:1:39",
+      "path": "memory/2026-05-12.md",
+      "startLine": 1,
+      "endLine": 39,
+      "source": "memory",
+      "snippet": "# 2026-05-12 工作记录 ## 暴雪邮件回复（澄清视觉参考意图） **背景**: 暴雪回复5月8日概念探索邮件，对\"参考示例\"意图产生歧义，追问是要\"使用范围\"还是\"其他\" **分析结论**: - 对方内部要开 art + publishing 同步会，说明决策有权重 - 对方倾向于理解为\"使用范围\"，但不确定 - 我方原邮件\"mood directions\"表达过于含蓄，导致歧义 **回复策略（v2直接版）**: - 第一句直接澄清：是视觉风格，不是使用范围 - 两个问题直击边界： 1. 暴雪最多把品牌视觉推到什么程度（过往案例） 2. \"那条线\"在哪里（too much vs. just enough） - 去掉\"mood boards\"等对方可能选择性忽略的词 **邮件文件**: `screenshots/blizzard_reply_clarify_v2_2026-05-12.md` **发送状态**: ✅ 已发送（13:58） **等待**: 暴雪 art + publishing 团队 sync 后确认 --- ## 今日工作 - [x] 分析暴雪邮件意图（歧义：使用范围 vs. 视觉风格） - [x] 起草澄清回复（v1 → v2 优化，更直接） - [x] 中英对照确认 - [x] 发送邮件 ## 待办 - [ ] 等待暴雪团队 sync 后回复 - [ ] 根据对方提供的参考，准备术士职业上线视觉概念稿 --- ## 行业趋势下午茶（cron任务） **来源**: GameRes游资网、品玩、2026中国生成式AI大会",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-14T12:41:06.426Z",
+      "lastRecalledAt": "2026-05-14T12:41:19.703Z",
+      "queryHashes": [
+        "7da151f13384",
+        "b529fe8d4717"
+      ],
+      "recallDays": [
+        "2026-05-14"
+      ],
+      "conceptTags": [
+        "工作",
+        "记录",
+        "邮件",
+        "回复",
+        "澄清",
+        "视觉",
+        "参考",
+        "意图"
       ]
     }
   }
