@@ -130,4 +130,30 @@
 - 备份方式：Git clone + 定期同步 或 GitHub API导出
 
 ---
+
+## 成本表自动化技能（2026-06-03 建立，2026-06-03 升级为定时任务）
+
+**触发词**：`拉成本单` / `同步成本表` / `更新成本表`
+
+**功能**：把易协作(YXZ)工单数据增量同步到 POPO 灵犀表格「成本需求汇总表」
+
+**Skill 位置**：`C:\Users\jxguo\.openclaw\plugin-skills\cost-sync\SKILL.md`
+
+**项目路径**：`E:\项目工作相关\G67\AI\chengbengai\`
+
+**手动执行**：
+```cmd
+cd /d E:\项目工作相关\G67\AI\chengbengai
+npm run sync:test
+```
+
+**自动执行**：cron job `成本表自动同步` (id: `a8c4f291-3b67-4d82-9e15-7d3b8c4f2910`)
+- 每周四 18:30 自动跑
+- 完成后自动飞书推送统计报告
+- 报告包含：易协作工单数、父单数量、新写入数、跳过数、错误列表
+
+**配置文件**：`E:\项目工作相关\G67\AI\chengbengai\config\sync.config.json`
+- YXZ账号：`jxguo@corp.netease.com`
+
+---
 _在此记录重要的决策、洞察、需要长期记住的事情_
