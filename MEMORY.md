@@ -152,6 +152,14 @@ npm run sync:test
 - 完成后自动飞书推送统计报告
 - 报告包含：易协作工单数、父单数量、新写入数、跳过数、错误列表
 
+**⚠️ 数据准确性规则（不得违反）**：
+- **总单名称 + 总单链接** → 必须指向同一个 rootId，不能错配（名称是A，链接是B）
+- **指派人** → 取子单自己的 assigned_to，不用父单负责人替代
+- **月份** → 从 fixed_version 解析，缺失留空不猜
+- **易协作单号** → 子单自己的 #id，格式 `#issueId 标题`
+
+**脚本**：`scripts/import-missing-v3.js`（v3 是正确版本，旧版 test-yxz-popo-sync.js 已废弃）
+
 **配置文件**：`E:\项目工作相关\G67\AI\chengbengai\config\sync.config.json`
 - YXZ账号：`jxguo@corp.netease.com`
 
